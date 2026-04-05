@@ -56,13 +56,56 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - People: people/index.md
-  - Brands: brands/index.md
-  - Models: models/index.md
-  - Materials: materials/index.md
-  - Frames: frames/index.md
-  - Clubs: clubs/index.md
+  - People:
+      - Home: people/index.md
+      - Alexander Graham Bell: people/alexander-graham-bell.md
+      - Baden Baden-Powell: people/baden-baden-powell.md
+      - John Barresi: people/john-barresi.md
+      - Richard Debray: people/richard-debray.md
+      - Jean-Pierre Dravigney: people/jean-pierre-dravigney.md
+      - Bruno Duval: people/bruno-duval.md
+      - Benoît Flament: people/benoit-flament.md
+      - Joe Hadzicki: people/joe-hadzicki.md
+      - Lawrence Hargrave: people/lawrence-hargrave.md
+      - Joseph Lecornu: people/joseph-lecornu.md
+      - Otto Lilienthal: people/otto-lilienthal.md
+      - Samuel Cody: people/samuel-cody.md
+      - Roger Tessa-Gambassi: people/roger-tessa-gambassi.md
+      - Wright Brothers: people/wright-brothers.md
+  - Brands:
+      - Home: brands/index.md
+      - Cavaliers du Ciel: brands/cavaliers-du-ciel.md
+      - Drôles d'Oiseaux: brands/droles-d-oiseaux.md
+      - Kite Forge: brands/kite-forge.md
+      - L'Atelier: brands/l-atelier.md
+      - R-Sky: brands/r-sky.md
+      - Revolution Kites: brands/revolution-kites.md
+  - Models:
+      - Home: models/index.md
+      - Cody War Kite: models/cody-war-kite.md
+      - Djinn: models/djinn.md
+      - Nirvana: models/nirvana.md
+  - Materials:
+      - Home: materials/index.md
+      - Icarex: materials/icarex.md
+  - Frames:
+      - Home: frames/index.md
+      - Bambou: frames/bambou.md
+      - Dynamic: frames/dynamic.md
+      - Sky Shark: frames/skyshark.md
+      - Structil: frames/structil.md
+  - Clubs:
+      - Home: clubs/index.md
+      - Airkraft: clubs/airkraft.md
+      - Cerf-Volant Club de France: clubs/cerf-volant-club-de-france.md
+      - Courant d'Air: clubs/courant-d-air.md
+      - EO Kite: clubs/eo-kite.md
+      - Is'Air (Pair): clubs/is-air.md
   - Pilots: pilots/index.md
-  - Timeline: timeline/index.md
-  - Releases: releases/index.md
+  - Timeline:
+      - Home: timeline/index.md
+      - 1893 Invention of the Box Kite: timeline/1893-invention-box-kite.md
+  - Releases:
+      - Home: releases/index.md
+      - April 2026: releases/2026-04.md
   - Glossary: glossary/index.md

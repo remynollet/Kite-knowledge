@@ -1,3 +1,7 @@
 # Models
 
-Browse all model entries. Content will be added as entries are validated and promoted.
+Browse all kite model entries.
+
+- [Cody War Kite](cody-war-kite.md)
+- [Djinn](djinn.md)
+- [Nirvana](nirvana.md)

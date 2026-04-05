@@ -22,8 +22,8 @@ ai_status: "draft"
 source_verified: false
 reviewer: null
 review_date: null
-website: "AI: https://www.facebook.com/StartAirKiteTeam/"
-social: ["AI: https://www.facebook.com/StartAirKiteTeam/"]
+website: [FACEBOOK](https://www.facebook.com/search/top?q=startair%20kite%20flying%20team%20-%20cvc%20jules%20verne)
+social: [FACEBOOK](https://www.facebook.com/search/top?q=startair%20kite%20flying%20team%20-%20cvc%20jules%20verne)
 affiliation: "AI: Fédération Française de Vol Libre (FFVL)"
 logo: "AI: https://scontent.fcdg2-1.fna.fbcdn.net/v/t39.30808-6/241111111_10111111111111111_1111111111111111111_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=placeholder"
 ---
