@@ -1,0 +1,61 @@
+<!-- related-entities.html — RelatedEntitiesModule component for Kite-knowledge
+     Story 2.4: Internal links grouped by semantic type (People/Brands/Models/Events/Technologies).
+     Mobile: collapsed by default, expandable via <details>.
+     Populated from page.meta.related list of doc paths.
+-->
+{% if page.meta and page.meta.related and page.meta.related | length > 0 %}
+<nav class="related-entities" aria-label="Related entities">
+  <h2 class="related-entities__heading">Related Entities</h2>
+
+  {#
+    Group related links by entity type.
+    Format expected: "docs/people/peter-lynn.md" or "people/peter-lynn.md"
+    We extract the type from the path segment after 'docs/' or the first segment.
+    
+    Type → Display label mapping
+  #}
+  {% set type_labels = {
+    "people": "People",
+    "brands": "Brands",
+    "models": "Models",
+    "materials": "Materials",
+    "frames": "Frame Systems",
+    "clubs": "Clubs",
+    "pilots": "Pilots",
+    "timeline": "Events"
+  } %}
+
+  {% set groups = {} %}
+  {% for link in page.meta.related %}
+    {# Extract the type folder from the path #}
+    {% set parts = link.replace("docs/", "").split("/") %}
+    {% set type_key = parts[0] if parts | length > 1 else "other" %}
+    {% set slug = parts[-1].replace(".md", "") %}
+    {% set display = slug.replace("-", " ") | title %}
+
+    {% if type_key not in groups %}
+      {% set _ = groups.update({type_key: []}) %}
+    {% endif %}
+    {% set _ = groups[type_key].append({"link": link, "slug": slug, "display": display}) %}
+  {% endfor %}
+
+  <div class="related-entities__groups">
+    {% for type_key, items in groups.items() %}
+    <section class="related-entities__group">
+      <h3 class="related-entities__group-heading">
+        {{ type_labels.get(type_key, type_key | title) }}
+      </h3>
+      <ul class="related-entities__list">
+        {% for item in items %}
+        <li class="related-entities__item">
+          <a class="related-entities__link" href="{{ item.link }}">
+            {{ item.display }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
+  </div>
+</nav>
+{% endif %}

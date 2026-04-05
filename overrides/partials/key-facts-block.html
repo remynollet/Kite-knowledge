@@ -1,0 +1,36 @@
+<!-- key-facts-block.html — KeyFactsBlock component for Kite-knowledge
+     Story 2.3: Compact fact table visible above the fold on entity pages.
+     Pulls from frontmatter fields relevant to the entity type.
+-->
+{% if page.meta and page.meta.type %}
+<aside class="key-facts-block" aria-label="Key facts">
+  <table class="key-facts-block__table">
+    <tbody>
+      {% if page.meta.type %}<tr>
+        <th scope="row" class="key-facts-block__label">Type</th>
+        <td class="key-facts-block__value">{{ page.meta.type | capitalize }}</td>
+      </tr>{% endif %}
+      {% if page.meta.date_range %}<tr>
+        <th scope="row" class="key-facts-block__label">Period</th>
+        <td class="key-facts-block__value">{{ page.meta.date_range }}</td>
+      </tr>{% endif %}
+      {% if page.meta.geography %}<tr>
+        <th scope="row" class="key-facts-block__label">Geography</th>
+        <td class="key-facts-block__value">{{ page.meta.geography }}</td>
+      </tr>{% endif %}
+      {% if page.meta.category %}<tr>
+        <th scope="row" class="key-facts-block__label">Category</th>
+        <td class="key-facts-block__value">{{ page.meta.category }}</td>
+      </tr>{% endif %}
+      {% if page.meta.manufacturer %}<tr>
+        <th scope="row" class="key-facts-block__label">Manufacturer</th>
+        <td class="key-facts-block__value">{{ page.meta.manufacturer }}</td>
+      </tr>{% endif %}
+      {% if page.meta.era %}<tr>
+        <th scope="row" class="key-facts-block__label">Era</th>
+        <td class="key-facts-block__value">{{ page.meta.era }}</td>
+      </tr>{% endif %}
+    </tbody>
+  </table>
+</aside>
+{% endif %}

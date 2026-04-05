@@ -1,0 +1,63 @@
+# Schema for entity type: timeline
+type: timeline
+fields:
+  id:
+    type: string
+    required: true
+    description: "Kebab-case slug matching the filename exactly."
+    notes: "No accents, no spaces, no uppercase. Must equal filename without .md extension."
+  type:
+    type: string
+    required: true
+    allowed_values: [timeline]
+    description: "Fixed value: timeline"
+  title:
+    type: string
+    required: true
+    description: "Short event title."
+  date_range:
+    type: string
+    required: true
+    description: "Single year or range. E.g., '1893' or '1900-1910'."
+  geography:
+    type: string
+    required: true
+    description: "Country or region where the event occurred."
+  category:
+    type: string
+    required: true
+    description: "Event category: invention, competition, milestone, record, publication, regulation, etc."
+  tags:
+    type: list
+    required: true
+    description: "At least one tag must match type 'timeline'. Era tags recommended (e.g., 1850s, 1900s)."
+  related:
+    type: list
+    required: true
+    description: "Relative paths to related docs/ entities. May be empty list []."
+  summary:
+    type: string
+    required: true
+    description: "One-sentence summary shown in EntityHeader component."
+  ai_status:
+    type: string
+    required: true
+    allowed_values: [draft, in-review, validated]
+    description: "Editorial lifecycle state."
+  source_verified:
+    type: bool
+    required: true
+    description: "True only when all sources have been checked by a human reviewer."
+  reviewer:
+    type: string
+    required: false
+    description: "GitHub username of reviewer. Null until reviewed."
+    notes: "Must not be null in docs/ (enforced by validate_frontmatter.py extended checks)."
+  review_date:
+    type: string
+    required: false
+    description: "ISO date YYYY-MM-DD of last review. Null until reviewed."
+  era:
+    type: string
+    required: false
+    description: "Era tag for grouping: 1850s, 1900s, 1950s, modern, etc."

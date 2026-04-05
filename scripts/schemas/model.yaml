@@ -1,0 +1,63 @@
+# Schema for entity type: model
+type: model
+fields:
+  id:
+    type: string
+    required: true
+    description: "Kebab-case slug matching the filename exactly."
+    notes: "No accents, no spaces, no uppercase. Must equal filename without .md extension."
+  type:
+    type: string
+    required: true
+    allowed_values: [model]
+    description: "Fixed value: model"
+  title:
+    type: string
+    required: true
+    description: "Model name, including manufacturer if needed for disambiguation."
+  date_range:
+    type: string
+    required: true
+    description: "Production years. E.g., '1998-2005' or '2001-present'."
+  geography:
+    type: string
+    required: true
+    description: "Country of manufacture or design origin."
+  category:
+    type: string
+    required: true
+    description: "Kite class: delta, foil, power, sport, traction, display, stunt, box, etc."
+  tags:
+    type: list
+    required: true
+    description: "At least one tag must match type 'model'. Additional domain tags welcome."
+  related:
+    type: list
+    required: true
+    description: "Relative paths to related docs/ entities. May be empty list []."
+  summary:
+    type: string
+    required: true
+    description: "One-sentence summary shown in EntityHeader component."
+  ai_status:
+    type: string
+    required: true
+    allowed_values: [draft, in-review, validated]
+    description: "Editorial lifecycle state."
+  source_verified:
+    type: bool
+    required: true
+    description: "True only when all sources have been checked by a human reviewer."
+  reviewer:
+    type: string
+    required: false
+    description: "GitHub username of reviewer. Null until reviewed."
+    notes: "Must not be null in docs/ (enforced by validate_frontmatter.py extended checks)."
+  review_date:
+    type: string
+    required: false
+    description: "ISO date YYYY-MM-DD of last review. Null until reviewed."
+  manufacturer:
+    type: string
+    required: false
+    description: "Slug of the brand that produced this model (e.g., peter-lynn-kites)."

@@ -1,0 +1,132 @@
+/* ==========================================================================
+   AI Content Warning Banner — ai-content-warning.css
+   Story 4.3 — full implementation
+   ========================================================================== */
+
+/* ---------------------------------------------------------------------------
+   Banner wrapper — visually distinct, amber warning surface
+   --------------------------------------------------------------------------- */
+
+.ai-warning-banner {
+  display: block;
+  margin-bottom: var(--space-6, 1.5rem);
+  border-radius: var(--radius-md, 0.375rem);
+  overflow: hidden;
+  border: 1.5px solid #f59e0b;
+  background-color: #fffbeb;
+  box-shadow: var(--shadow-sm, 0 1px 2px 0 rgb(0 0 0 / 0.05));
+}
+
+.ai-warning-banner__inner {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4, 1rem);
+  padding: var(--space-4, 1rem) var(--space-5, 1.25rem);
+  border-left: 5px solid #f59e0b;
+}
+
+.ai-warning-banner__icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.ai-warning-banner__body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2, 0.5rem);
+}
+
+.ai-warning-banner__title {
+  font-size: var(--text-sm, 0.875rem);
+  font-weight: 700;
+  color: #92400e;
+  display: block;
+}
+
+.ai-warning-banner__message {
+  font-size: var(--text-sm, 0.875rem);
+  color: #78350f;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.ai-warning-banner__feedback {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1, 0.25rem);
+  font-size: var(--text-sm, 0.875rem);
+  font-weight: 600;
+  color: #92400e;
+  text-decoration: underline;
+  text-decoration-color: rgba(146, 64, 14, 0.4);
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+  align-self: flex-start;
+}
+
+.ai-warning-banner__feedback:hover,
+.ai-warning-banner__feedback:focus-visible {
+  color: #78350f;
+  text-decoration-color: #78350f;
+}
+
+.ai-warning-banner__feedback:focus-visible {
+  outline: 2px solid #f59e0b;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---------------------------------------------------------------------------
+   Dark mode overrides
+   --------------------------------------------------------------------------- */
+
+[data-md-color-scheme="slate"] .ai-warning-banner {
+  background-color: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.5);
+}
+
+[data-md-color-scheme="slate"] .ai-warning-banner__title {
+  color: #fcd34d;
+}
+
+[data-md-color-scheme="slate"] .ai-warning-banner__message {
+  color: #fde68a;
+}
+
+[data-md-color-scheme="slate"] .ai-warning-banner__feedback {
+  color: #fcd34d;
+  text-decoration-color: rgba(252, 211, 77, 0.4);
+}
+
+[data-md-color-scheme="slate"] .ai-warning-banner__feedback:hover {
+  color: #fde68a;
+}
+
+/* ---------------------------------------------------------------------------
+   Reduced motion — disable box-shadow animation
+   --------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .ai-warning-banner {
+    transition: none;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Responsive — stack icon and body on small screens
+   --------------------------------------------------------------------------- */
+
+@media (max-width: 480px) {
+  .ai-warning-banner__inner {
+    flex-direction: column;
+    gap: var(--space-2, 0.5rem);
+    padding: var(--space-3, 0.75rem) var(--space-4, 1rem);
+  }
+
+  .ai-warning-banner__icon {
+    font-size: 1.25rem;
+  }
+}

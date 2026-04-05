@@ -1,0 +1,80 @@
+{#
+  source-citation-panel.html
+  Story 4.2 — SourceCitationPanel component
+  Rendered on entity pages (page.meta.type is set).
+  Shows: reviewal status summary, list of sources with verification levels.
+  Verification levels: verified (green ✓), partially-verified (amber ~), unchecked (gray ?)
+  External links open in new tab with screen-reader announcements (WCAG 2.5.3).
+  Always uses colour + icon + text — never colour alone (WCAG 1.4.1).
+#}
+{% if page.meta and page.meta.type %}
+<aside class="source-citation-panel" aria-labelledby="source-citation-heading">
+  <h2 class="source-citation-panel__heading" id="source-citation-heading">Sources &amp; Verification</h2>
+
+  <div class="source-citation-panel__status">
+    {% if page.meta.source_verified %}
+      <span class="source-badge source-badge--verified" role="status">
+        <span class="source-badge__icon" aria-hidden="true">✓</span>
+        <span>Sources verified</span>
+      </span>
+    {% else %}
+      <span class="source-badge source-badge--unchecked" role="status">
+        <span class="source-badge__icon" aria-hidden="true">?</span>
+        <span>Sources not yet verified</span>
+      </span>
+    {% endif %}
+    {% if page.meta.review_date %}
+    <span class="source-citation-panel__date">
+      Last reviewed: <time datetime="{{ page.meta.review_date }}">{{ page.meta.review_date }}</time>
+    </span>
+    {% endif %}
+  </div>
+
+  {% if page.meta.sources %}
+  <ul class="source-citation-panel__list" aria-label="Source list">
+    {% for source in page.meta.sources %}
+    <li class="source-citation-item">
+      {% if source.verified == "verified" %}
+        {% set src_state = "verified" %}
+        {% set src_icon = "✓" %}
+        {% set src_label = "Verified" %}
+      {% elif source.verified == "partially-verified" %}
+        {% set src_state = "partially-verified" %}
+        {% set src_icon = "~" %}
+        {% set src_label = "Partially verified" %}
+      {% else %}
+        {% set src_state = "unchecked" %}
+        {% set src_icon = "?" %}
+        {% set src_label = "Unchecked" %}
+      {% endif %}
+      <span class="source-badge source-badge--{{ src_state }} source-badge--sm" aria-label="{{ src_label }}">
+        <span class="source-badge__icon" aria-hidden="true">{{ src_icon }}</span>
+        <span aria-hidden="true">{{ src_label }}</span>
+      </span>
+      <span class="source-citation-item__ref">
+        {% if source.url %}
+          <a
+            class="source-citation-item__link"
+            href="{{ source.url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="{{ source.title | default(source.url) }} (opens in new tab)"
+          >{{ source.title | default(source.url) }}<span class="source-citation-item__ext-icon" aria-hidden="true"> ↗</span></a>
+        {% else %}
+          <span>{{ source.title }}</span>
+        {% endif %}
+        {% if source.author %}
+          <span class="source-citation-item__author">{{ source.author }}</span>
+        {% endif %}
+        {% if source.year %}
+          <span class="source-citation-item__year">({{ source.year }})</span>
+        {% endif %}
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="source-citation-panel__empty">No sources listed for this page yet.</p>
+  {% endif %}
+</aside>
+{% endif %}

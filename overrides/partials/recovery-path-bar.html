@@ -1,0 +1,114 @@
+{#
+  recovery-path-bar.html
+  Story 4.4 — RecoveryPathBar — full implementation
+  Rendered on stub pages (page.meta.stub == true) or AI draft pages (page.meta.ai_status == "draft").
+  Provides contextual navigation suggestions based on:
+    - page.meta.type → section browse link
+    - page.meta.tags → tag-specific links (first 3 tags)
+    - page.meta.date_range → era link in timeline
+    - page.meta.related → direct entity links when available
+  Always offers: section browse, tag search, timeline era link.
+#}
+{% if page.meta and (page.meta.stub == true or page.meta.ai_status == "draft") %}
+
+  {# Determine the message tone based on state #}
+  {% if page.meta.stub %}
+    {% set bar_phrase = "This page is a stub — full content is being prepared." %}
+    {% set bar_icon = "🚧" %}
+  {% else %}
+    {% set bar_phrase = "This page contains an unreviewed AI draft — content may be incomplete or inaccurate." %}
+    {% set bar_icon = "🤖" %}
+  {% endif %}
+
+  {# Determine timeline era from date_range #}
+  {% if page.meta.date_range %}
+    {% set start_year = page.meta.date_range[:4] | int %}
+    {% if start_year < 1900 %}
+      {% set era_anchor = "origins-18501899" %}
+      {% set era_label = "Origins (1850–1899)" %}
+    {% elif start_year < 1950 %}
+      {% set era_anchor = "early-modern-19001949" %}
+      {% set era_label = "Early Modern (1900–1949)" %}
+    {% elif start_year < 1980 %}
+      {% set era_anchor = "mid-century-19501979" %}
+      {% set era_label = "Mid-Century (1950–1979)" %}
+    {% elif start_year < 2000 %}
+      {% set era_anchor = "performance-era-19801999" %}
+      {% set era_label = "Performance Era (1980–1999)" %}
+    {% else %}
+      {% set era_anchor = "contemporary-2000present" %}
+      {% set era_label = "Contemporary (2000–present)" %}
+    {% endif %}
+  {% endif %}
+
+<div class="recovery-path-bar" role="navigation" aria-label="Alternative navigation paths">
+  <div class="recovery-path-bar__header">
+    <span class="recovery-path-bar__icon" aria-hidden="true">{{ bar_icon }}</span>
+    <p class="recovery-path-bar__message">{{ bar_phrase }}</p>
+  </div>
+
+  <div class="recovery-path-bar__body">
+    <p class="recovery-path-bar__label" id="recovery-suggestions-label">Explore related content:</p>
+    <ul class="recovery-path-bar__links" aria-labelledby="recovery-suggestions-label">
+
+      {# 1. Section browse — always present when type is known #}
+      {% if page.meta.type %}
+      <li>
+        <a class="recovery-path-bar__link recovery-path-bar__link--section" href="../">
+          <span aria-hidden="true">📂</span>
+          Browse all {{ page.meta.type | capitalize }} entries
+        </a>
+      </li>
+      {% endif %}
+
+      {# 2. Tag links — first 3 tags from page.meta.tags #}
+      {% if page.meta.tags %}
+        {% for tag in page.meta.tags | list %}
+          {% if loop.index <= 3 %}
+          <li>
+            <a class="recovery-path-bar__link recovery-path-bar__link--tag" href="{{ config.site_url | default('') }}/tags/#{{ tag }}">
+              <span aria-hidden="true">🏷️</span>
+              Pages tagged "{{ tag }}"
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {# 3. Timeline era — when date_range is present #}
+      {% if page.meta.date_range and era_anchor %}
+      <li>
+        <a class="recovery-path-bar__link recovery-path-bar__link--timeline" href="{{ config.site_url | default('') }}/timeline/#{{ era_anchor }}">
+          <span aria-hidden="true">📅</span>
+          Timeline: {{ era_label }}
+        </a>
+      </li>
+      {% endif %}
+
+      {# 4. Related entities — up to first 2 related links #}
+      {% if page.meta.related %}
+        {% for rel in page.meta.related | list %}
+          {% if loop.index <= 2 %}
+          <li>
+            <a class="recovery-path-bar__link recovery-path-bar__link--related" href="{{ config.site_url | default('') }}/{{ rel | replace('.md', '/') }}">
+              <span aria-hidden="true">🔗</span>
+              {{ rel | replace('.md', '') | replace('-', ' ') | replace('/', ' / ') | title }}
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {# 5. Fallback — always show home #}
+      <li>
+        <a class="recovery-path-bar__link recovery-path-bar__link--home" href="{{ config.site_url | default('/') }}">
+          <span aria-hidden="true">🏠</span>
+          Return to Home
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+{% endif %}
+

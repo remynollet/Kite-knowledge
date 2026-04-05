@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Badges Component — badges.css
+   Story 4.1 (ValidationBadge) — full implementation
+   ========================================================================== */
+
+/* ---------------------------------------------------------------------------
+   ValidationBadge wrapper
+   Positioned at top of content area, within first 100px.
+   --------------------------------------------------------------------------- */
+
+.validation-badge-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-3, 0.75rem);
+  margin-bottom: var(--space-4, 1rem);
+}
+
+/* ---------------------------------------------------------------------------
+   ValidationBadge pill
+   Always colour + icon + text — never colour alone (WCAG 1.4.1).
+   --------------------------------------------------------------------------- */
+
+.validation-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1, 0.25rem);
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  font-size: var(--text-xs, 0.75rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border: 1.5px solid transparent;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+/* Validated — green */
+.validation-badge--validated {
+  background-color: #ecfdf5;
+  color: #065f46;
+  border-color: #a7f3d0;
+}
+
+/* In Review — amber */
+.validation-badge--in-review {
+  background-color: #fffbeb;
+  color: #92400e;
+  border-color: #fcd34d;
+}
+
+/* AI Draft — neutral gray */
+.validation-badge--draft {
+  background-color: #f3f4f6;
+  color: #374151;
+  border-color: #d1d5db;
+}
+
+.validation-badge__icon {
+  font-size: 0.875em;
+  line-height: 1;
+}
+
+.validation-badge__label {
+  line-height: 1;
+}
+
+/* Reviewer meta line */
+.validation-badge__meta {
+  font-size: var(--text-xs, 0.75rem);
+  color: var(--color-text-muted, #6b7280);
+  font-style: italic;
+}
+
+/* ---------------------------------------------------------------------------
+   Dark mode overrides
+   --------------------------------------------------------------------------- */
+
+[data-md-color-scheme="slate"] .validation-badge--validated {
+  background-color: rgba(6, 95, 70, 0.2);
+  color: #6ee7b7;
+  border-color: rgba(110, 231, 183, 0.3);
+}
+
+[data-md-color-scheme="slate"] .validation-badge--in-review {
+  background-color: rgba(146, 64, 14, 0.2);
+  color: #fcd34d;
+  border-color: rgba(252, 211, 77, 0.3);
+}
+
+[data-md-color-scheme="slate"] .validation-badge--draft {
+  background-color: rgba(55, 65, 81, 0.4);
+  color: #d1d5db;
+  border-color: rgba(209, 213, 219, 0.3);
+}

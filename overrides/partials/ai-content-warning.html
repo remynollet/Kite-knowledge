@@ -1,0 +1,31 @@
+{#
+  ai-content-warning.html
+  Story 4.3 — AIContentWarningBanner component
+  Rendered ONLY when page.meta.ai_status == "in-review".
+  Visually distinct warning banner (amber background).
+  Includes: IA generation message, human review disclosure, feedback link.
+  Positioned above EntityHeader (first element in content area).
+#}
+{% if page.meta and page.meta.ai_status == "in-review" %}
+<div class="ai-warning-banner" role="alert" aria-live="polite">
+  <div class="ai-warning-banner__inner">
+    <span class="ai-warning-banner__icon" aria-hidden="true">🤖</span>
+    <div class="ai-warning-banner__body">
+      <strong class="ai-warning-banner__title">AI-Assisted Content — Under Review</strong>
+      <p class="ai-warning-banner__message">
+        This page was partially generated with AI assistance and is currently undergoing human editorial review.
+        Facts, dates, and attributions should be independently verified before citation.
+      </p>
+      <a
+        class="ai-warning-banner__feedback"
+        href="{{ config.repo_url }}/issues/new?template=content-review.md&title=Review+request:+{{ page.title | urlencode }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Submit a review request for this page on GitHub (opens in new tab)"
+      >
+        <span aria-hidden="true">📋</span> Submit a review request ↗
+      </a>
+    </div>
+  </div>
+</div>
+{% endif %}

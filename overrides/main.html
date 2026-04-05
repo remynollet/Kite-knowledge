@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{# Override the article content block to inject Kite-knowledge UX components #}
+{% block content %}
+<article class="md-content__inner md-typeset">
+
+  {# ── Epic 4.3: AI Content Warning Banner (only when ai_status: in-review) ── #}
+  {% if page.meta and page.meta.ai_status == "in-review" %}
+    {% include "partials/ai-content-warning.html" %}
+  {% endif %}
+
+  {# ── Epic 2.2 + Epic 4.1: EntityHeader with ValidationBadge (entity pages only) ── #}
+  {% if page.meta and page.meta.type %}
+    {% include "partials/validation-badge.html" %}
+    {% include "partials/entity-header.html" %}
+    {% include "partials/key-facts-block.html" %}
+  {% endif %}
+
+  {# ── Page body content ── #}
+  {% block content_inner %}
+    {{ page.content }}
+  {% endblock %}
+
+  {# ── Epic 3.2: TimelineMarker (entity pages except timeline type) ── #}
+  {% if page.meta and page.meta.type and page.meta.type != "timeline" and page.meta.date_range %}
+    {% include "partials/timeline-marker.html" %}
+  {% endif %}
+
+  {# ── Epic 2.4: RelatedEntitiesModule (entity pages with related entries) ── #}
+  {% if page.meta and page.meta.type %}
+    {% include "partials/related-entities.html" %}
+  {% endif %}
+
+  {# ── Epic 4.2: Source Citation Panel (entity pages) ── #}
+  {% if page.meta and page.meta.type %}
+    {% include "partials/source-citation-panel.html" %}
+  {% endif %}
+
+  {# ── Epic 4.4 / Story 2.8: Recovery Path Bar (stub pages) ── #}
+  {% if page.meta and (page.meta.stub == true or page.meta.ai_status == "draft") %}
+    {% include "partials/recovery-path-bar.html" %}
+  {% endif %}
+
+</article>
+{% endblock %}

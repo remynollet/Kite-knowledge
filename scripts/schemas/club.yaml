@@ -1,0 +1,59 @@
+# Schema for entity type: club
+type: club
+fields:
+  id:
+    type: string
+    required: true
+    description: "Kebab-case slug matching the filename exactly."
+    notes: "No accents, no spaces, no uppercase. Must equal filename without .md extension."
+  type:
+    type: string
+    required: true
+    allowed_values: [club]
+    description: "Fixed value: club"
+  title:
+    type: string
+    required: true
+    description: "Official club or organization name."
+  date_range:
+    type: string
+    required: true
+    description: "Active years. E.g., '1978-present' or '1990-2010'."
+  geography:
+    type: string
+    required: true
+    description: "Country or region where the club operates."
+  category:
+    type: string
+    required: true
+    description: "Club type: local-club, national-association, competition-org, festival-org, etc."
+  tags:
+    type: list
+    required: true
+    description: "At least one tag must match type 'club'. Additional domain tags welcome."
+  related:
+    type: list
+    required: true
+    description: "Relative paths to related docs/ entities. May be empty list []."
+  summary:
+    type: string
+    required: true
+    description: "One-sentence summary shown in EntityHeader component."
+  ai_status:
+    type: string
+    required: true
+    allowed_values: [draft, in-review, validated]
+    description: "Editorial lifecycle state."
+  source_verified:
+    type: bool
+    required: true
+    description: "True only when all sources have been checked by a human reviewer."
+  reviewer:
+    type: string
+    required: false
+    description: "GitHub username of reviewer. Null until reviewed."
+    notes: "Must not be null in docs/ (enforced by validate_frontmatter.py extended checks)."
+  review_date:
+    type: string
+    required: false
+    description: "ISO date YYYY-MM-DD of last review. Null until reviewed."

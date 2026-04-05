@@ -1,0 +1,68 @@
+site_name: Kite-knowledge
+site_description: >-
+  A structured, source-aware knowledge base covering kite history and technical
+  evolution from 1850 to the present.
+repo_url: https://github.com/Remy/Kite-knowledge
+repo_name: Remy/Kite-knowledge
+docs_dir: docs
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.breadcrumbs
+    - toc.integrate
+    - search.highlight
+    - search.suggest
+    - search.share
+
+extra_css:
+  - stylesheets/theme.css
+  - stylesheets/entity-header.css
+  - stylesheets/key-facts-block.css
+  - stylesheets/related-entities.css
+  - stylesheets/badges.css
+  - stylesheets/timeline.css
+  - stylesheets/responsive.css
+  - stylesheets/recovery-path-bar.css
+  - stylesheets/source-citation-panel.css
+  - stylesheets/ai-content-warning.css
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - People: people/index.md
+  - Brands: brands/index.md
+  - Models: models/index.md
+  - Materials: materials/index.md
+  - Frames: frames/index.md
+  - Clubs: clubs/index.md
+  - Pilots: pilots/index.md
+  - Timeline: timeline/index.md
+  - Releases: releases/index.md
+  - Glossary: glossary/index.md

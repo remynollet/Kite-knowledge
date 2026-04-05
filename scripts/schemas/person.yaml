@@ -1,0 +1,59 @@
+# Schema for entity type: person
+type: person
+fields:
+  id:
+    type: string
+    required: true
+    description: "Kebab-case slug matching the filename exactly (e.g., peter-lynn)."
+    notes: "No accents, no spaces, no uppercase. Must equal filename without .md extension."
+  type:
+    type: string
+    required: true
+    allowed_values: [person]
+    description: "Fixed value: person"
+  title:
+    type: string
+    required: true
+    description: "Full name of the person."
+  date_range:
+    type: string
+    required: true
+    description: "Birth year to death year or 'present'. E.g., '1959-present'."
+  geography:
+    type: string
+    required: true
+    description: "Country or region of origin/activity."
+  category:
+    type: string
+    required: true
+    description: "Role: designer, pilot, historian, manufacturer, inventor, etc."
+  tags:
+    type: list
+    required: true
+    description: "At least one tag must match type 'person'. Additional domain tags welcome."
+  related:
+    type: list
+    required: true
+    description: "Relative paths to related docs/ entities. May be empty list []."
+  summary:
+    type: string
+    required: true
+    description: "One-sentence summary shown in EntityHeader component."
+  ai_status:
+    type: string
+    required: true
+    allowed_values: [draft, in-review, validated]
+    description: "Editorial lifecycle state."
+  source_verified:
+    type: bool
+    required: true
+    description: "True only when all sources have been checked by a human reviewer."
+  reviewer:
+    type: string
+    required: false
+    description: "GitHub username of reviewer. Null until reviewed."
+    notes: "Must not be null in docs/ (enforced by validate_frontmatter.py extended checks)."
+  review_date:
+    type: string
+    required: false
+    description: "ISO date YYYY-MM-DD of last review. Null until reviewed."

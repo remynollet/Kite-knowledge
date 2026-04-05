@@ -1,0 +1,36 @@
+<!-- entity-header.html — EntityHeader component for Kite-knowledge
+     Story 2.2: Displays entity metadata in top 100px of content area.
+     Rendered from page frontmatter: title, date_range, geography, category, summary.
+-->
+{% if page.meta and page.meta.type %}
+<div class="entity-header" role="banner" aria-label="Entity information">
+  <div class="entity-header__grid">
+    <div class="entity-header__primary">
+      <h1 class="entity-header__title">{{ page.meta.title | default(page.title) }}</h1>
+      {% if page.meta.summary %}
+      <p class="entity-header__summary">{{ page.meta.summary }}</p>
+      {% endif %}
+    </div>
+    <div class="entity-header__meta">
+      {% if page.meta.date_range %}
+      <div class="entity-header__meta-item">
+        <span class="entity-header__meta-label">Period</span>
+        <span class="entity-header__meta-value">{{ page.meta.date_range }}</span>
+      </div>
+      {% endif %}
+      {% if page.meta.geography %}
+      <div class="entity-header__meta-item">
+        <span class="entity-header__meta-label">Geography</span>
+        <span class="entity-header__meta-value">{{ page.meta.geography }}</span>
+      </div>
+      {% endif %}
+      {% if page.meta.category %}
+      <div class="entity-header__meta-item">
+        <span class="entity-header__meta-label">Category</span>
+        <span class="entity-header__meta-value entity-header__meta-value--category">{{ page.meta.category }}</span>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endif %}

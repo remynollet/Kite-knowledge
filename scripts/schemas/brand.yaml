@@ -1,0 +1,59 @@
+# Schema for entity type: brand
+type: brand
+fields:
+  id:
+    type: string
+    required: true
+    description: "Kebab-case slug matching the filename exactly."
+    notes: "No accents, no spaces, no uppercase. Must equal filename without .md extension."
+  type:
+    type: string
+    required: true
+    allowed_values: [brand]
+    description: "Fixed value: brand"
+  title:
+    type: string
+    required: true
+    description: "Brand or company name."
+  date_range:
+    type: string
+    required: true
+    description: "Operating years. E.g., '1990-present' or '1985-2003'."
+  geography:
+    type: string
+    required: true
+    description: "Country or region of headquarters/origin."
+  category:
+    type: string
+    required: true
+    description: "Type of brand: manufacturer, distributor, workshop, retailer, etc."
+  tags:
+    type: list
+    required: true
+    description: "At least one tag must match type 'brand'. Additional domain tags welcome."
+  related:
+    type: list
+    required: true
+    description: "Relative paths to related docs/ entities. May be empty list []."
+  summary:
+    type: string
+    required: true
+    description: "One-sentence summary shown in EntityHeader component."
+  ai_status:
+    type: string
+    required: true
+    allowed_values: [draft, in-review, validated]
+    description: "Editorial lifecycle state."
+  source_verified:
+    type: bool
+    required: true
+    description: "True only when all sources have been checked by a human reviewer."
+  reviewer:
+    type: string
+    required: false
+    description: "GitHub username of reviewer. Null until reviewed."
+    notes: "Must not be null in docs/ (enforced by validate_frontmatter.py extended checks)."
+  review_date:
+    type: string
+    required: false
+    description: "ISO date YYYY-MM-DD of last review. Null until reviewed."

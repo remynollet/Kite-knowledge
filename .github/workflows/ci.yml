@@ -1,0 +1,70 @@
+name: CI — PR Gate
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    name: Content Validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Step 1 — Frontmatter lint
+      - name: Step 1 — Frontmatter Lint
+        run: python scripts/validate_frontmatter.py docs/
+
+      # Step 2 — AI draft block
+      - name: Step 2 — Block ai_status draft in docs/
+        run: |
+          if grep -r "ai_status: draft" docs/; then
+            echo "ERROR: One or more files in docs/ contain 'ai_status: draft'. Publication blocked."
+            exit 1
+          fi
+          echo "OK: No ai_status: draft found in docs/"
+
+      # Step 3 — Broken link check
+      - name: Step 3 — Broken Link Check
+        run: python scripts/check_links.py docs/
+
+      # Step 4 — MkDocs strict build
+      - name: Step 4 — MkDocs Strict Build
+        run: mkdocs build --strict
+
+      # Step 5 — Accessibility audit (non-blocking warning — upgrade to blocking after first clean run)
+      - name: Step 5 — Accessibility Audit (Lighthouse)
+        continue-on-error: true
+        run: |
+          npm install -g @lhci/cli lighthouse
+          mkdocs build -d /tmp/site-audit
+          cd /tmp/site-audit
+          python -m http.server 9000 &
+          sleep 3
+          lighthouse http://localhost:9000/index.html \
+            --output=json \
+            --output-path=/tmp/lighthouse-report.json \
+            --chrome-flags="--headless --no-sandbox" \
+            --only-categories=accessibility \
+            --quiet || true
+          node -e "
+            const r = require('/tmp/lighthouse-report.json');
+            const score = r.categories.accessibility.score * 100;
+            console.log('Accessibility score:', score);
+            if (score < 90) {
+              console.log('WARNING: Accessibility score below 90. Review violations.');
+            } else {
+              console.log('OK: Accessibility score meets threshold.');
+            }
+          " || echo "Lighthouse report processing skipped (node not available)"

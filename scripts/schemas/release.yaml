@@ -1,0 +1,50 @@
+# Schema for entity type: release
+type: release
+fields:
+  id:
+    type: string
+    required: true
+    description: "Kebab-case slug matching the filename exactly (e.g., 2026-04)."
+    notes: "Format: YYYY-MM — matching the docs/releases/YYYY-MM.md filename."
+  type:
+    type: string
+    required: true
+    allowed_values: [release]
+    description: "Fixed value: release"
+  title:
+    type: string
+    required: true
+    description: "Display title for the release (e.g., 'April 2026 Release')."
+  date_range:
+    type: string
+    required: true
+    description: "Month of release in YYYY-MM format."
+  summary:
+    type: string
+    required: true
+    description: "One-sentence summary of the release highlights."
+  tags:
+    type: list
+    required: true
+    description: "Must include at least 'release'. Additional tags welcome."
+  related:
+    type: list
+    required: true
+    description: "May be empty list []. Links to key pages mentioned in this release."
+  ai_status:
+    type: string
+    required: true
+    allowed_values: [draft, in-review, validated]
+    description: "Editorial lifecycle state."
+  source_verified:
+    type: bool
+    required: true
+    description: "True once links and references have been checked."
+  reviewer:
+    type: string
+    required: false
+    description: "GitHub username of the maintainer publishing this release note."
+  review_date:
+    type: string
+    required: false
+    description: "ISO date YYYY-MM-DD of when the release note was finalized."
