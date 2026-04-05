@@ -1,0 +1,207 @@
+/* ==========================================================================
+   Timeline Component — timeline.css
+   Story 3.2 (TimelineMarker) — full implementation
+   ========================================================================== */
+
+/* ---------------------------------------------------------------------------
+   TimelineMarker — aside badge on entity pages (non-timeline types)
+   Links entity to its era in the timeline index.
+   --------------------------------------------------------------------------- */
+
+.timeline-marker {
+  margin: var(--space-6, 1.5rem) 0;
+  border-radius: var(--radius-md, 0.375rem);
+  overflow: hidden;
+  border: 1px solid var(--color-border, #e5e7eb);
+  background: var(--color-surface, #ffffff);
+  box-shadow: var(--shadow-sm, 0 1px 2px 0 rgb(0 0 0 / 0.05));
+}
+
+.timeline-marker__inner {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3, 0.75rem);
+  padding: var(--space-3, 0.75rem) var(--space-4, 1rem);
+  border-left: 4px solid var(--color-primary, #1a3a5c);
+}
+
+.timeline-marker__icon {
+  font-size: 1.25rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.timeline-marker__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1, 0.25rem);
+  min-width: 0;
+}
+
+.timeline-marker__label {
+  font-size: var(--text-xs, 0.75rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted, #6b7280);
+}
+
+.timeline-marker__range {
+  font-size: var(--text-sm, 0.875rem);
+  font-weight: 700;
+  color: var(--color-primary, #1a3a5c);
+}
+
+.timeline-marker__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1, 0.25rem);
+  font-size: var(--text-sm, 0.875rem);
+  color: var(--color-accent, #f59e0b);
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: var(--space-1, 0.25rem);
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.timeline-marker__link:hover,
+.timeline-marker__link:focus-visible {
+  color: var(--color-primary, #1a3a5c);
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary, #1a3a5c);
+}
+
+.timeline-marker__link:focus-visible {
+  outline: 2px solid var(--color-accent, #f59e0b);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ---------------------------------------------------------------------------
+   Timeline Index Page — era sections
+   Used in docs/timeline/index.md and era sub-pages.
+   --------------------------------------------------------------------------- */
+
+.timeline-era {
+  margin: var(--space-8, 2rem) 0;
+}
+
+.timeline-era__heading {
+  font-size: var(--text-xl, 1.25rem);
+  font-weight: 700;
+  color: var(--color-primary, #1a3a5c);
+  border-bottom: 2px solid var(--color-primary, #1a3a5c);
+  padding-bottom: var(--space-2, 0.5rem);
+  margin-bottom: var(--space-4, 1rem);
+}
+
+/* Timeline event cards in an index listing */
+.timeline-event-card {
+  display: flex;
+  gap: var(--space-4, 1rem);
+  padding: var(--space-4, 1rem);
+  background: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e5e7eb);
+  border-radius: var(--radius-md, 0.375rem);
+  margin-bottom: var(--space-3, 0.75rem);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.timeline-event-card:hover {
+  border-color: var(--color-primary, #1a3a5c);
+  box-shadow: var(--shadow-md, 0 4px 6px -1px rgb(0 0 0 / 0.1));
+}
+
+.timeline-event-card__year {
+  flex-shrink: 0;
+  width: 4rem;
+  font-size: var(--text-lg, 1.125rem);
+  font-weight: 800;
+  color: var(--color-primary, #1a3a5c);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.timeline-event-card__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.timeline-event-card__title {
+  font-size: var(--text-base, 1rem);
+  font-weight: 600;
+  color: var(--color-primary, #1a3a5c);
+  margin: 0 0 var(--space-1, 0.25rem);
+}
+
+.timeline-event-card__summary {
+  font-size: var(--text-sm, 0.875rem);
+  color: var(--color-text-muted, #6b7280);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Vertical timeline rail */
+.timeline-rail {
+  position: relative;
+  padding-left: var(--space-8, 2rem);
+}
+
+.timeline-rail::before {
+  content: "";
+  position: absolute;
+  left: 0.875rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-border, #e5e7eb);
+}
+
+.timeline-rail__node {
+  position: absolute;
+  left: 0.5rem;
+  top: 1.25rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--color-primary, #1a3a5c);
+  border: 2px solid var(--color-surface, #ffffff);
+  box-shadow: 0 0 0 2px var(--color-primary, #1a3a5c);
+}
+
+/* ---------------------------------------------------------------------------
+   Dark mode overrides
+   --------------------------------------------------------------------------- */
+
+[data-md-color-scheme="slate"] .timeline-marker {
+  background: var(--md-default-bg-color, #1e1e2e);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-md-color-scheme="slate"] .timeline-event-card {
+  background: var(--md-default-bg-color, #1e1e2e);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ---------------------------------------------------------------------------
+   Responsive
+   --------------------------------------------------------------------------- */
+
+@media (max-width: 600px) {
+  .timeline-marker__inner {
+    flex-direction: column;
+    gap: var(--space-2, 0.5rem);
+  }
+
+  .timeline-event-card {
+    flex-direction: column;
+    gap: var(--space-2, 0.5rem);
+  }
+
+  .timeline-event-card__year {
+    width: auto;
+    text-align: left;
+    font-size: var(--text-base, 1rem);
+  }
+}

@@ -1,0 +1,91 @@
+/* ==========================================================================
+   EntityHeader Component — entity-header.css
+   Story 2.2
+   ========================================================================== */
+
+.entity-header {
+  background-color: var(--color-background-alt);
+  border-bottom: 2px solid var(--color-primary);
+  padding: var(--space-3) var(--space-2);
+  margin-bottom: var(--space-3);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.entity-header__grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.entity-header__title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: var(--line-height-tight);
+  margin: 0 0 var(--space-1) 0;
+  border: none;
+  padding: 0;
+}
+
+.entity-header__summary {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+  font-style: italic;
+}
+
+.entity-header__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.entity-header__meta-item {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-half) var(--space-1);
+  min-width: 120px;
+}
+
+.entity-header__meta-label {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  line-height: var(--line-height-tight);
+}
+
+.entity-header__meta-value {
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: var(--line-height-snug);
+}
+
+.entity-header__meta-value--category {
+  color: var(--color-primary);
+}
+
+/* Desktop: 2-column layout */
+@media (min-width: 1024px) {
+  .entity-header__grid {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  .entity-header__primary {
+    flex: 1 1 60%;
+  }
+
+  .entity-header__meta {
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: var(--space-half);
+  }
+}

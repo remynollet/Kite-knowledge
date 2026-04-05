@@ -1,0 +1,46 @@
+/* ==========================================================================
+   KeyFactsBlock Component — key-facts-block.css
+   Story 2.3: Compact scan-first fact table, visible above the fold.
+   ========================================================================== */
+
+.key-facts-block {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-3);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.key-facts-block__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-sm);
+}
+
+.key-facts-block__label {
+  background-color: var(--color-background-alt);
+  color: var(--color-text-muted);
+  font-weight: 600;
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: var(--space-half) var(--space-1);
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+  width: 30%;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.key-facts-block__value {
+  color: var(--color-text);
+  padding: var(--space-half) var(--space-1);
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+  /* WCAG AA: color-text (#1f2937) on white = 14.7:1 contrast ratio ✓ */
+}
+
+.key-facts-block__table tr:last-child .key-facts-block__label,
+.key-facts-block__table tr:last-child .key-facts-block__value {
+  border-bottom: none;
+}
