@@ -2,8 +2,8 @@ site_name: Kite-knowledge
 site_description: >-
   A structured, source-aware knowledge base covering kite history and technical
   evolution from 1850 to the present.
-repo_url: https://github.com/Remy/Kite-knowledge
-repo_name: Remy/Kite-knowledge
+repo_url: https://github.com/remynollet/Kite-knowledge
+repo_name: remynollet/Kite-knowledge
 docs_dir: docs
 theme:
   name: material

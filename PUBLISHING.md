@@ -184,7 +184,7 @@ git push origin add-person-otto-lilienthal
 
 ### Open the PR on GitHub
 
-1. Go to `https://github.com/YOUR_USERNAME/Kite-knowledge`
+1. Go to `https://github.com/remynollet/Kite-knowledge`
 2. GitHub will show a banner: **"Compare & pull request"** — click it
 3. Set the base branch to `main`
 4. Title format: `feat: add [type] [slug]` (e.g., `feat: add person otto-lilienthal`)
@@ -216,7 +216,7 @@ Click on the failing check to see the error log. Common fixes:
 Once the PR is merged to `main`:
 
 1. The deploy workflow runs automatically (takes ~1–2 minutes)
-2. The site is updated at `https://YOUR_USERNAME.github.io/Kite-knowledge/`
+2. The site is updated at `https://remynollet.github.io/Kite-knowledge/`
 3. Your new page is live
 
 ---

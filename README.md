@@ -1,6 +1,6 @@
 # Kite-knowledge
 
-[![Deploy — GitHub Pages](https://github.com/Remy/Kite-knowledge/actions/workflows/deploy.yml/badge.svg)](https://github.com/Remy/Kite-knowledge/actions/workflows/deploy.yml)
+[![Deploy — GitHub Pages](https://github.com/remynollet/Kite-knowledge/actions/workflows/deploy.yml/badge.svg)](https://github.com/remynollet/Kite-knowledge/actions/workflows/deploy.yml)
 
 Base documentaire sur le cerf-volant — source-aware knowledge base covering kite history and technical evolution from 1850 to the present.
 

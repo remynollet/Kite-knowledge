@@ -22,21 +22,21 @@ This guide covers the one-time setup and ongoing deployment of Kite-knowledge to
 ```bash
 cd Kite-knowledge/
 git init
-git remote add origin https://github.com/YOUR_USERNAME/Kite-knowledge.git
+git remote add origin https://github.com/remynollet/Kite-knowledge.git
 git add .
 git commit -m "feat: initial project setup"
 git push -u origin main
 ```
 
-> Replace `YOUR_USERNAME` with your GitHub username. Update `repo_url` and `repo_name` in `mkdocs.yml` accordingly.
+> `repo_url` and `repo_name` in `mkdocs.yml` are already set to `remynollet/Kite-knowledge`.
 
 ### 1.2 Update `mkdocs.yml` with your repository URL
 
 Open `mkdocs.yml` and set:
 
 ```yaml
-repo_url: https://github.com/YOUR_USERNAME/Kite-knowledge
-repo_name: YOUR_USERNAME/Kite-knowledge
+repo_url: https://github.com/remynollet/Kite-knowledge
+repo_name: remynollet/Kite-knowledge
 ```
 
 ### 1.3 Configure Branch Protection
@@ -63,7 +63,7 @@ In GitHub: **Settings → Pages**
 - Click **Save**
 
 Your site will be live at:  
-`https://YOUR_USERNAME.github.io/Kite-knowledge/`
+`https://remynollet.github.io/Kite-knowledge/`
 
 ---
 
