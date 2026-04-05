@@ -1,0 +1,59 @@
+---
+id: "is-air"
+type: "club"
+title: "Is'Air (Pair)"
+date_range: "AI: 2010-present"
+geography: "France — Grand Est / Normandie"
+category: "competition-pair"
+tags:
+  - "club"
+  - "pair"
+  - "france"
+  - "champion"
+  - "acrobatique"
+  - "4-lignes"
+related:
+  - "docs/pilots/jean-pierre-dravigney.md"
+  - "docs/pilots/bruno-duval.md"
+summary: "AI: Is'Air est la paire de référence mondiale pour le cerf-volant à quatre lignes, composée de Jean-Pierre Dravigney et Bruno Duval, Champions d'Europe et Vice-Champions du Monde 2024."
+ai_status: "draft"
+source_verified: false
+reviewer: null
+review_date: null
+website: "AI: https://estair.net/"
+affiliation: "AI: Fédération Française de Vol Libre (FFVL)"
+logo: "AI: https://estair.net/images/logo_is_air.jpg"
+---
+
+# Is'Air (Pair)
+
+## Summary
+
+<!-- AI-PROPOSED — verify before publishing -->
+La paire **Is'Air** est l'une des formations les plus prestigieuses de la catégorie cerf-volant à quatre lignes (type Revolution). Composée de **Jean-Pierre Dravigney** (club Est'Air) et **Bruno Duval**, elle incarne l'excellence française dans une discipline exigeant une dissociation motrice et une synchronisation extrêmes.
+
+Is'Air se distingue par des ballets d'une grande fluidité technique, utilisant toutes les capacités spécifiques des quatre lignes : arrêts nets, vols stationnaires dans toutes les positions et marches arrière complexes. Leur palmarès inclut des titres de Champions de France, un titre de Champions d'Europe en 2017, et une médaille d'argent à la World Kite Cup 2024.
+
+## Key Facts
+
+| Field | Value |
+|---|---|
+| Membres | AI: Jean-Pierre Dravigney & Bruno Duval |
+| Discipline | AI: Cerf-volant à 4 lignes (Quad) |
+| Titre Récent | AI: Vice-Champions du Monde Paire 4 lignes (2024) |
+| Spécialité | AI: Ballet synchronisé haute précision |
+| Localisation | AI: France (Est et Normandie) |
+
+## Historical Context
+
+<!-- AI-PROPOSED — verify before publishing -->
+L'association de Jean-Pierre Dravigney et Bruno Duval a permis de porter le pilotage 4 lignes vers de nouveaux sommets artistiques. Alors que la discipline est souvent perçue comme purement technique, Is'Air a su y intégrer une dimension chorégraphique proche de la danse. 
+
+Leur matériel est souvent le fruit de recherches personnelles, les deux pilotes étant également d'excellents constructeurs. En 2024, lors de la Coupe du Monde des Nations à Berck-sur-Mer, leur performance a été l'un des points forts de l'événement, démontrant une maîtrise technique qui reste une référence pour les nouvelles générations de pilotes de Revolution.
+
+## Sources
+
+- [QuadKites.org — Profil Is'Air](https://quadkites.org) — consulté le 2026-04-05
+- [Est'Air — Les pilotes de haut niveau](https://estair.net/) — consulté le 2026-04-05
+- [Vol Passion — Résultats Berck 2024](https://vol-passion.fr)
+- [Addict Kite — Reportages compétitions 4 lignes](https://addict-kite.com)

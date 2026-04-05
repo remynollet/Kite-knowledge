@@ -18,7 +18,7 @@ fields:
   date_range:
     type: string
     required: true
-    description: "Birth year to death year or 'present'. E.g., '1959-present'."
+    description: "Lifespan or period of activity. E.g., '1959-present' or '1850-1915'."
   geography:
     type: string
     required: true
@@ -26,7 +26,7 @@ fields:
   category:
     type: string
     required: true
-    description: "Role: designer, pilot, historian, manufacturer, inventor, etc."
+    description: "Primary roles: designer, pilot, champion, historian, manufacturer, inventor, etc."
   tags:
     type: list
     required: true
@@ -57,3 +57,39 @@ fields:
     type: string
     required: false
     description: "ISO date YYYY-MM-DD of last review. Null until reviewed."
+  nationality:
+    type: string
+    required: false
+    description: "Primary nationality of the person."
+  notable_designs:
+    type: list
+    required: false
+    description: "List of model slugs designed by this person."
+  mentors:
+    type: list
+    required: false
+    description: "List of person slugs who influenced or mentored this person."
+  honors:
+    type: list
+    required: false
+    description: "List of awards, titles, or Hall of Fame inductions."
+  specialties:
+    type: list
+    required: false
+    description: "For pilots: List of flight disciplines (e.g., freestyle, precision, traction)."
+  achievements:
+    type: list
+    required: false
+    description: "For competitors: List of competition titles or records."
+  sponsors:
+    type: list
+    required: false
+    description: "For pro pilots: List of brand slugs for current or past sponsors."
+  image:
+    type: string
+    required: false
+    description: "Path to a portrait or representative photo of the person."
+  social:
+    type: list
+    required: false
+    description: "List of personal or professional social links."

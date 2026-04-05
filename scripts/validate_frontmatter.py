@@ -71,7 +71,7 @@ def validate_file(filepath: Path) -> list[str]:
             pass
         elif value is not None:
             # type check
-            type_map = {"string": str, "bool": bool, "list": list}
+            type_map = {"string": str, "bool": bool, "list": list, "int": int, "float": float}
             expected_py = type_map.get(expected_type)
             if expected_py and not isinstance(value, expected_py):
                 errors.append(

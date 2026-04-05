@@ -57,3 +57,19 @@ fields:
     type: string
     required: false
     description: "ISO date YYYY-MM-DD of last review. Null until reviewed."
+  manufacturer:
+    type: string
+    required: false
+    description: "Slug of the brand that produces this frame system (e.g., skyshark)."
+  material_ref:
+    type: string
+    required: false
+    description: "Slug of the primary material used (reference to material entity)."
+  diameter:
+    type: string
+    required: false
+    description: "Outside diameter of the spar (e.g., '6mm' or '0.240 in')."
+  image:
+    type: string
+    required: false
+    description: "Path to a representative photo or technical drawing of the frame component."

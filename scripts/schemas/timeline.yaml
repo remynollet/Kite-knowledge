@@ -61,3 +61,11 @@ fields:
     type: string
     required: false
     description: "Era tag for grouping: 1850s, 1900s, 1950s, modern, etc."
+  main_entities:
+    type: list
+    required: false
+    description: "List of key entity slugs involved in this event."
+  image:
+    type: string
+    required: false
+    description: "Path to a representative illustration or photo of the event."

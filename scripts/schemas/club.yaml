@@ -57,3 +57,23 @@ fields:
     type: string
     required: false
     description: "ISO date YYYY-MM-DD of last review. Null until reviewed."
+  website:
+    type: string
+    required: false
+    description: "Official club website URL."
+  social:
+    type: list
+    required: false
+    description: "List of social media links (Facebook, Instagram, etc.)."
+  affiliation:
+    type: string
+    required: false
+    description: "Parent organization or federation (e.g., FFVL)."
+  coordinates:
+    type: string
+    required: false
+    description: "GPS coordinates of the primary flying spot."
+  logo:
+    type: string
+    required: false
+    description: "Path to the club's logo or emblem image."
