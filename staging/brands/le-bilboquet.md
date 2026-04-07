@@ -28,8 +28,8 @@ social:
   - "https://www.instagram.com/bilboquetsport/"
   - "https://www.youtube.com/channel/UCHSJcdLEE2yb1yONdBF6lBg"
 status: "active"
-founder: "TODO: fondateur(s) non publié(s)"
-logo: "TODO: URL d'une image"
+founder: "AI: Gérard Clément"
+logo: "AI: https://www.bilboquet.com/img/logo-1.jpg"
 ---
 
 # Le Bilboquet
@@ -37,13 +37,14 @@ logo: "TODO: URL d'une image"
 ## Summary
 
 <!-- AI-PROPOSED — verify before publishing -->
-**Le Bilboquet** est une boutique spécialisée dans les jeux, jouets et cerfs-volants de sport et de loisir, fondée à **Vannes** (Morbihan) en **1991**. Elle est portée par une équipe de six personnes animées par la passion du jeu et du cerf-volant, avec pour philosophie de « garder son âme d'enfant, jouer à tous âges et apprendre en jouant ». Le commerce s'articule autour de deux sites web distincts — **bilboquetsport.com** (cerf-volant et sport) et **bilboquet.com** (jeux et jouets) — ainsi qu'une boutique physique en plein centre historique de Vannes, à deux pas de la cathédrale. La boutique jeux & jouets (bilboquet.com) se présente comme active « depuis 1988 », ce qui suggère une antériorité du volet jouets avant la spécialisation cerf-volant.
+**Le Bilboquet** est une boutique spécialisée dans les jeux, jouets et cerfs-volants de sport et de loisir, fondée à **Vannes** (Morbihan) en **1991**. Elle est portée par une équipe de six personnes animées par la passion du jeu et du cerf-volant, avec pour philosophie de « garder son âme d'enfant, jouer à tous âges et apprendre en jouant ». Le commerce s'articule autour de deux sites web distincts — **bilboquetsport.com** (cerf-volant et sport) et **bilboquet.com** (jeux et jouets) — ainsi qu'une boutique physique en plein centre historique de Vannes, à deux pas de la cathédrale. La boutique jeux & jouets (bilboquet.com) se présente comme active « depuis 1988 », ce qui suggère une antériorité du volet jouets avant la spécialisation cerf-volant par le fondateur **Gérard Clément**, figure historique du cerf-volant en France.
 
 ## Key Facts
 
 | Field | Value |
 |---|---|
 | Fondation | 1991 (volet cerf-volant de sport) — AI: 1988 (UNCERTAIN) pour la boutique jouets |
+| Fondateur | AI: Gérard Clément |
 | Adresse | 9 rue Saint-Guenhaël, 56000 Vannes (Centre historique, près de la cathédrale) |
 | Téléphone | 02 97 47 56 92 |
 | Email | contact@bilboquet.com |
@@ -79,7 +80,8 @@ Revolution, Spider Kites, Prism, HQ Kites (Colors in Motion), Atelier Kites, Dje
 
 ## Sources
 
-- bilboquetsport.com/fr/ — page d'accueil, descriptif et contacts
-- bilboquetsport.com/fr/magasins — horaires et adresse boutique
-- bilboquet.com/fr/ — site jouets (depuis 1988)
-- addictkite.com/bilboquet-nous-devoile-son-top-5/ (14/05/2019) — top 5 ventes par catégorie
+- [Site officiel Bilboquet Sport](https://www.bilboquetsport.com/fr/) — page d'accueil, descriptif et contacts
+- [Bilboquet Sport - Magasins](https://www.bilboquetsport.com/fr/magasins) — horaires et adresse boutique
+- [Site officiel Bilboquet Jeux & Jouets](https://www.bilboquet.com/fr/) — site jouets (depuis 1988)
+- [Addict Kite - Bilboquet nous dévoile son top 5](https://addictkite.com/bilboquet-nous-devoile-son-top-5/) (14/05/2019) — top 5 ventes par catégorie
+- [Wokipi - Portrait Gérard Clément](http://www.wokipi-kite.com/personnalites_gerard_clement.php) — fondateur et historique

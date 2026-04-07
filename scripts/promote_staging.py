@@ -29,6 +29,7 @@ TYPE_TO_FOLDER = {
     "frame": "frames",
     "club": "clubs",
     "pilot": "pilots",
+    "team": "teams",
     "timeline": "timeline",
     "release": "releases",
 }

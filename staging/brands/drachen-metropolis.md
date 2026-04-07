@@ -30,7 +30,7 @@ social:
   - "https://www.youtube.com/@MetropolisDrachen"
 status: "active"
 founder: "AI: Dieter Rieth et Thorsten Baasch"
-logo: "TODO: URL d'une image"
+logo: "AI: https://www.metropolis-drachen.de/out/metropolis/img/logo.png"
 ---
 
 # Drachen Metropolis
@@ -87,8 +87,8 @@ Metropolis Drachen est avant tout un **spécialiste en conseil, vente et expédi
 
 ## Sources
 
-- metropolis-drachen.de/en/About-Us-Imprint/ — mentions légales, adresse, associés, TVA
-- metropolis-drachen.de/en/Opening-times-and-how-to-find-us/ — horaires
-- metropolis-drachen.de/en/More-than-30-years-Metropolis/ — historique (source : *Kite & Friends* 01/2015)
-- metropolis-drachen.de/en/Behind-Metropolis/ — portrait enseigne (source : *Kite & Friends* 04/2016, vidéo YouTube Kite Builders)
-- evendo.com/locations/denmark/romo/shop/metropolis-drachen — shop Rømø, Lakolk Butikscenter 13
+- [Metropolis Drachen - About Us / Imprint](https://www.metropolis-drachen.de/en/About-Us-Imprint/) — mentions légales, adresse, associés, TVA
+- [Metropolis Drachen - Opening times](https://www.metropolis-drachen.de/en/Opening-times-and-how-to-find-us/) — horaires
+- [Metropolis Drachen - History](https://www.metropolis-drachen.de/en/More-than-30-years-Metropolis/) — historique (source : *Kite & Friends* 01/2015)
+- [YouTube - Behind Metropolis (Kite Builders)](https://www.youtube.com/@MetropolisDrachen) — portrait enseigne
+- [Evendo - Metropolis Drachen Rømø](https://www.evendo.com/locations/denmark/romo/shop/metropolis-drachen) — boutique Rømø

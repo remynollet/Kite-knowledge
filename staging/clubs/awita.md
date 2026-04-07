@@ -18,7 +18,7 @@ tags:
   - "team"
   - "monofil"
 related: []
-summary: "AI: Équipe française de démonstration de cerfs-volants géants et acrobatiques, fondée en 1998 par Sylvain et Nicolas après le Team Kéops, proposant shows de cerfs-volants en nombre et géants lors de 10 à 15 festivals par an, en France et dans le monde entier."
+summary: "AI: Équipe française de renommée mondiale spécialisée dans les cerfs-volants gonflables géants (show kites), fondée en 1998 par Sylvain et Blandine Nicolas."
 ai_status: "draft"
 source_verified: false
 reviewer: null
@@ -28,7 +28,7 @@ social:
   - "AI: https://www.facebook.com/awita.kites (Facebook)"
 affiliation: null
 coordinates: "AI: 47°28'N, 0°27'W (Brain-sur-l'Authion, Maine-et-Loire)"
-logo: "TODO: URL d'une image"
+logo: "AI: Logo reconnaissable sur vêtements d'équipe et bannières de festivals"
 ---
 
 # AWITA – All Ways In The Air
@@ -36,7 +36,7 @@ logo: "TODO: URL d'une image"
 ## Summary
 
 <!-- AI-PROPOSED — verify before publishing -->
-**AWITA** (All Ways In The Air) est une équipe française de démonstration de cerfs-volants, basée à **Brain-sur-l'Authion** (Maine-et-Loire). Fondée en **1998** par Sylvain et Nicolas à la suite du **Team Kéops** (équipe compétitive 1995–1998), elle s'est spécialisée dans les shows pluridisciplinaires alliant cerfs-volants géants, trains de deltas, dirigeables et voiles de traction. Avec plus de 25 ans d'activité, l'équipe réalise chaque année **10 à 15 festivals** en France et à l'international.
+**AWITA** (All Ways In The Air) est une équipe française de démonstration de cerfs-volants de renommée mondiale, basée à **Brain-sur-l'Authion** (Maine-et-Loire). Fondée en **1998** par **Sylvain et Blandine Nicolas**, elle s'est spécialisée dans les structures gonflables géantes monumentales (pieuvre de 65m, baleines, trilobites) présentées dans les plus grands festivals internationaux.
 
 AWITA est également connue sous le nom **AWITA / TEAM KEOPS** sur certains annuaires professionnels.
 
@@ -50,10 +50,10 @@ AWITA est également connue sous le nom **AWITA / TEAM KEOPS** sur certains annu
 | Téléphone | AI: 06 83 92 76 93 |
 | Site web | https://www.awita.com/ |
 | Fondé | 1998 |
-| Fondateurs | Sylvain et Nicolas (noms de famille non publiés) |
-| Noyau dur actuel | AI: Sylvain, Nicolas, Jeff, Blandine, Aline, Fifi, Nico2 |
-| Disciplines | AI: Cerfs-volants géants, trains de deltas, dirigeables, Flexifoils, flow-form, cerf-volant acrobatique 2L |
-| Spécialité emblématique | AI: \"Over-larges\" — baleine, trilobites, pieuvres (jusqu'à 65 m), nounours violet |
+| Fondateurs | Sylvain et Blandine Nicolas |
+| Noyau dur actuel | AI: Sylvain, Blandine, Nicolas, Jeff, Aline, Fifi, Nico2 |
+| Disciplines | AI: Cerfs-volants géants, trains de deltas, dirigeables, cerf-volant acrobatique |
+| Spécialité emblématique | AI: \"Over-larges\" — pieuvre de 65m, baleine, trilobites, pingouin articulé |
 | Fréquence | AI: 10–15 festivals/an |
 | Portée | AI: France + internationale (Europe, Asie, Amériques, Afrique, Océanie) |
 

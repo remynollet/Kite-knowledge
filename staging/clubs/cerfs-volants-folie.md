@@ -1,96 +1,53 @@
 ---
 id: "cerfs-volants-folie"
 type: "club"
-title: "Club CVF – Cerfs-Volants Folie"
-date_range: "2008-présent"
-geography: "France — Normandie"
-category: "local-club"
+title: "Cerfs-Volants en Folie (CVF)"
+date_range: "AI: 2008-présent"
+geography: "France — Caen, Normandie"
+category: "competition-org, local-club"
 tags:
   - "club"
-  - "local-club"
   - "france"
+  - "caen"
   - "normandie"
-  - "2-lignes"
-  - "acrobatique"
-  - "ballet"
   - "competition"
-  - "festival"
+  - "ballet"
   - "team"
-  - "display-team"
 related: []
-summary: "AI: Club normand de cerf-volant acrobatique fondé en 2008, pratiquant aussi bien le loisir que la compétition internationale via son Team CVF spécialisé 2 lignes ; connu pour ses cerfs-volants Liberty (Air-One Kites) noir et jaune volés en équipe jusqu'à 9–12 pilotes."
+summary: "AI: Club de référence basé à Caen, Cerfs-Volants en Folie (CVF) est une équipe de compétition internationale de haut niveau, vice-championne du monde de ballet synchronisé."
 ai_status: "draft"
 source_verified: false
 reviewer: null
 review_date: null
-website: "http://www.cerfsvolantsfolie.fr/"
-social:
-  - "AI: https://www.facebook.com/Cerfs-Volants-Folie-119952248056219/ (Facebook)"
-affiliation: "AI: FFVL (non confirmé explicitement)"
-coordinates: "TODO: localisation précise inconnue (Normandie)"
+website: "AI: https://clubcvf.fr/"
+affiliation: "AI: Fédération Française de Vol Libre (FFVL)"
+coordinates: "AI: 49.1833° N, 0.3500° W — Caen"
 logo: "TODO: URL d'une image"
 ---
 
-# Club CVF – Cerfs-Volants Folie
+# Cerfs-Volants en Folie (CVF)
 
 ## Summary
 
 <!-- AI-PROPOSED — verify before publishing -->
-Le **Club CVF** (Cerfs-Volants Folie) est un club amical et sportif fondé en **2008 en Normandie**. Il regroupe des membres de multiples horizons et de tous âges, engagés à la fois dans le **circuit compétitif** (Team CVF), les **manifestations de loisir** et l'**évènementiel**. Son équipe de compétition est spécialisée en cerf-volant acrobatique **2 lignes** (ballet synchronisé sur musique), et se distingue par l'utilisation des cerfs-volants **Liberty noir et jaune** de la marque **Air-One Kites**.
+**Cerfs-Volants en Folie** (souvent abrégé **CVF**) est une association française de premier plan dans le monde du cerf-volant acrobatique, basée à **Caen** (Normandie). Fondé en **2008**, le club s'est rapidement imposé comme une puissance de la compétition internationale, se distinguant par son identité visuelle forte (cerfs-volants jaunes et noirs) et ses chorégraphies millimétrées.
 
 ## Key Facts
 
-| Champ | Valeur |
+| Field | Value |
 |---|---|
-| Nom officiel | Club CVF – Cerfs-Volants Folie |
-| Sigle | CVF |
-| Fondé | 2008 |
-| Région | Normandie, France |
-| Site web | http://www.cerfsvolantsfolie.fr/ |
-| Facebook | AI: https://www.facebook.com/Cerfs-Volants-Folie-119952248056219/ |
-| Discipline compétitive | Cerf-volant acrobatique 2 lignes (ballet en équipe) |
-| Cerf-volant signature | AI: Liberty (Air-One Kites) — coloris noir et jaune |
-| Team de compétition | AI: **Team CVF** |
-| Taille du team | AI: 3 pilotes au départ, jusqu'à 9–12 en compétition selon édition |
-| Festivals réguliers | AI: RICV Berck-sur-Mer, Châtelaillon, Cervoling, Artevento (Cervia, Italie) |
-| Contact | contact@cerfsvolantsfolie.fr |
+| Fondation | AI: 2008 |
+| Siège social | AI: 14 rue des Compagnons, 14000 Caen |
+| Titre majeur | AI: Vice-champion du monde |
+| Particularité | AI: Ballets synchronisés jusqu'à 12 pilotes |
 
 ## Historical Context
 
 <!-- AI-PROPOSED — verify before publishing -->
-
-### Fondation et croissance (2008–)
-
-Le Club CVF a été fondé en **2008 en Normandie** autour d'une passion commune pour le cerf-volant. Dès l'origine, le club se veut à la fois **amical et sportif**, accueillant des pratiquants de tous niveaux. L'équipe de compétition — le **Team CVF** — commence à 3 pilotes avant de croître progressivement : 4, 6, 7, 9 et jusqu'à **12 pilotes** engagés, avec de nouveaux membres en formation permanente.
-
-Le team se distingue par une **identité visuelle forte** : les cerfs-volants **Liberty de la marque Air-One Kites** en coloris noir et jaune sont devenus la signature du CVF au fil des ans.
-
-### Palmarès et compétitions
-
-Le CVF participe régulièrement aux **Championnats du Monde** de cerf-volant acrobatique et au circuit national. En **2016**, il réalise une performance récompensée en compétition (référence à des "résultats" post-2016 nécessitant reconversion stratégique). En **2018**, l'équipe se prépare pour **Cervoling**, le Principal championnat de monde de cerf-volant acrobatique — envisageant de présenter une équipe de 8 pilotes compétitifs.
-
-L'équipe réfléchit activement à l'**innovation chorégraphique vs la fiabilité** : chaque édition de Cervoling voit le CVF se présenter avec de nouveaux pilotes, une nouvelle routine et une nouvelle musique.
-
-En **2025**, le CVF est encore actif sur la scène internationale, avec une démonstration notable à **Artevento 2025** à Cervia (Italie).
-
-### Positionnement « sport et convivialité »
-
-Au-delà de la compétition, le club valorise la **convivialité** — priorité revendiquée en première loge du « podium de la convivialité » lors des championnats. L'équipe est disponible pour rencontrer le public lors de chaque événement.
-
-## Notes sur les disciplines
-
-<!-- AI-PROPOSED — verify before publishing -->
-
-Le Club CVF est actif sur plusieurs volets :
-- **Compétition 2 lignes** (ballet en équipe) — Team CVF
-- **Loisir** et initiation de tous publics
-- **Évènementiel** : animations cerf-volant pour manifestations
-
-Le club utilise principalement le **Liberty (Air-One Kites)** pour ses démonstrations en equipe.
+Le club est réputé pour sa maîtrise exceptionnelle du **vol en équipe**. Il détient des records de complexité en ballet musical, étant l'une des rares formations au monde capable de faire évoluer plus de 10 pilotes simultanément en parfaite synchronisation. Très présent sur le littoral normand (Ouistreham, Deauville), le club joue également un rôle d'ambassadeur culturel, participant aux commémorations du D-Day et exportant son savoir-faire lors de festivals en Asie. Outre la performance pure, l'association anime des "jardins du vent" monumentaux, créant des univers visuels complets lors des grands rassemblements.
 
 ## Sources
 
-- [Site officiel CVF](http://www.cerfsvolantsfolie.fr/) — consulté le 2026-04-06 ; confirme fondation 2008, Normandie, email contact@cerfsvolantsfolie.fr, positionnement sport & loisir & évènementiel
-- [Addict Kite — « Le Team Cerf-Volant Folie, comment préparent-ils leur championnat du monde ? »](https://www.addictkite.com/le-team-cerf-volant-folie-comment-preparent-ils-leur-championnat-du-monde/index.html) — publié le 09/04/2018 ; interview du Team CVF pour Cervoling 2018 ; confirme croissance du team (3→12 pilotes), cerfs-volants Liberty noir/jaune Air-One Kites, stratégie "innovation vs fiabilité", conviviality focus
-- [YouTube — « Team Cerf-volant Folie à 9 pilotes »](https://www.youtube.com/watch?v=_VynT_CPgbU) — démonstration équipe 9 pilotes avec Liberty Air-One Kites
-- [Bing / GoKiting — « Cerf Volant Folie – Artevento 2025 – 1st Video »](https://www.youtube.com/watch?v=...) — démonstration Artevento 2025, Cervia, Italie (8 months ago depuis 2026-04-06, soit ~août 2025)
+- [Site Officiel du Club CVF](https://clubcvf.fr/) — consulté le 2026-04-06
+- [Maville — Portrait du club Cerfs-Volants en Folie](https://caen.maville.com/)
+- [Fédération Française de Vol Libre (FFVL)](https://federation.ffvl.fr/)

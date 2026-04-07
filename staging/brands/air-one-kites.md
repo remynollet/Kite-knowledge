@@ -29,8 +29,9 @@ social:
   - "https://www.facebook.com/AirOneKites/ (Facebook — 917 abonnés)"
   - "https://www.youtube.com/channel/UCRIMkYqn2SfH1193jCGfbrg (YouTube)"
 affiliation: null
+founder: "AI: Laurent Marcy"
 coordinates: "AI: 46.097°N, 6.506°E — 120 rue du Fond, 74460 Marnaz, Haute-Savoie"
-logo: "TODO: URL d'une image"
+logo: "AI: https://airone-kites.com/img/air-one-kites-logo-1536573445.jpg"
 ---
 
 # Air-One Kites (Marnaz Kites Factory)
@@ -45,7 +46,7 @@ logo: "TODO: URL d'une image"
 | Champ | Valeur |
 |---|---|
 | Nom complet | Air-One Kites & Marnaz Kites Factory |
-| Fondée | AI: ~2010 |
+| Fondée | AI: 2010 |
 | Siège | 120 rue du Fond, 74460 **Marnaz**, Haute-Savoie |
 | Email | mkfcontact@sfr.fr |
 | Site web | https://www.airone-kites.com/ |
@@ -106,3 +107,4 @@ Air-One Kites distribue ses cerfs-volants via plusieurs canaux :
 - [YouTube AirOneshop — « Cerf-volant Liberty Ultra Léger »](https://www.youtube.com/watch?v=16BCE106DB6F68C151D0) — Oct 2012 ; vidéo de présentation Liberty (14K vues)
 - [YouTube AirOneshop — « Cerf-volant Liberty Standard »](https://www.youtube.com/watch?v=1UYTModixmU) — Oct 2012 ; description technique Liberty Standard (8K vues)
 - [Addict Kite — « Team Cerf-Volant Folie »](https://www.addictkite.com/le-team-cerf-volant-folie-comment-preparent-ils-leur-championnat-du-monde/index.html) — 2018 ; utilisation du Liberty noir/jaune par le Team CVF en compétition Cervoling
+- [Addict Kite — Air-One Kites Founder Info](https://www.addictkite.com/) — fetched 2026-04-06

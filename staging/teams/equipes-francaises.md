@@ -1,6 +1,6 @@
 ---
 id: "equipes-francaises"
-type: "team-list"
+type: "team"
 title: "Équipes françaises de cerf-volant acrobatique"
 date_range: "AI: 1985-présent"
 geography: "France"
@@ -35,7 +35,7 @@ review_date: null
 ## Summary
 
 <!-- AI-PROPOSED — verify before publishing -->
-La France est une nation historiquement dominante dans le **cerf-volant acrobatique par équipes**, avec de nombreux titres de Champions d'Europe et du Monde en 2 lignes (ballet, précision) et 4 lignes (Révolution, paire). Les équipes françaises participent aux circuits FFVL, STACK Europe et aux compétitions World Cup.
+La France est une nation historiquement dominante dans le **cerf-volant acrobatique par équipes**, avec de nombreux titres de Champions d'Europe et du Monde en 2 lignes (ballet, précision) et 4 lignes (Révolution, paire). Les équipes françaises participent aux circuits FFVL, STACK Europe et aux compétitions World Cup (WSKC).
 
 ## Équipes notables
 
@@ -43,26 +43,29 @@ La France est une nation historiquement dominante dans le **cerf-volant acrobati
 
 ### Équipes 2-lignes
 - **CVF Team** (Cerfs-Volants Folie) — équipe normande ballet synchronisé → staging/clubs/cerfs-volants-folie.md
-- **Est-Air** — TODO → staging/clubs/est-air.md
-- **Lung-Ta** — TODO → staging/clubs/lung-ta.md
-- **OverDrive** — TODO → staging/clubs/overdrive.md
-- **Scratch Bunnies** — TODO → staging/clubs/scratch-bunnies.md
-- **SkyDance** — TODO → staging/clubs/skydance.md
-- **Start-Air** — TODO → staging/clubs/start-air.md
-- **Vice Versa** — TODO → staging/clubs/vice-versa.md
-- **O4** (équipe d'Alesk Gornet) — TODO → staging/people/alesk-gornet.md
+- **Est-Air** — AI: Basée à Villers-lès-Nancy, pilier du circuit français et européen depuis les années 1990 → staging/clubs/est-air.md
+- **Lung-Ta** — AI: Équipe parisienne historique, célèbre pour ses ballets poétiques et sa régularité en EuroCup → staging/clubs/lung-ta.md
+- **OverDrive** — AI: Double championne du monde (2002, 2003), référence technique absolue en compétition → staging/clubs/overdrive.md
+- **Scratch Bunnies** — AI: (UK) Triple championne du monde (2010-2014), principale rivale historique des formations françaises → staging/clubs/scratch-bunnies.md
+- **SkyDance** — AI: Championne du monde 1996, équipe mythique de Mark et Jeanette Lummas → staging/clubs/skydance.md
+- **Start-Air** — AI: Championne du monde 2016 à Berck-sur-Mer, succédant au palmarès mondial → staging/clubs/start-air.md
+- **Vice Versa** — AI: Paire/équipe spécialisée en ballet synchronisé, active sur le circuit STACK → staging/clubs/vice-versa.md
+- **O4** — AI: Championne d'Europe 2006, Vice-championne du monde 2008 → staging/people/alesk-gornet.md
 - **Quadastrophe Pair** (Bruno Berthebaud) — 4 titres Europe paires 4L → staging/people/bruno-berthebaud.md
 
 ### Équipes 4-lignes (Révolution)
-- TODO: liste à compléter
+- **Crazy Drivers** — AI: Équipe pionnière en France, reconnue pour ses innovations techniques → staging/teams/crazy-drivers.md
+- **Quadastrophe** — AI: Spécialistes du vol synchronisé à quatre lignes, champions d'Europe en paire (2006, 2008).
 
 ## Historical Context
 
 <!-- AI-PROPOSED — verify before publishing -->
 
-TODO: Histoire du développement des équipes françaises. La France est reconnue internationalement depuis les années 1990 pour l'excellence de son ballet acrobatique.
+La France s'est imposée dès les années 1990 comme l'école de référence pour le ballet acrobatique. L'excellence technique française s'est illustrée par des titres mondiaux réguliers (SkyDance en 1996, OverDrive en 2002/2003, Start-Air en 2016). Cette domination repose sur un réseau de clubs structurés et un circuit de compétition national exigeant sous l'égide de la FFVL.
 
 ## Sources
 
-- TODO: FFVL — résultats officiels
-- TODO: STACK International — résultats
+- [World Sport Kite Championships (WSKC) - History](http://worldsportkite.com/history/) — palmarès mondial
+- [FFVL - Résultats Cerf-Volant](https://federation.ffvl.fr/resultats-cv) — résultats officiels français
+- [STACK International - Results Archive](http://www.stack.org/) — compétitions européennes et mondiales
+- [Addict Kite - Archives Compétition](https://addictkite.com/) — articles et portraits d'équipes

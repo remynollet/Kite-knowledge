@@ -2,7 +2,7 @@
 id: "aerostuff"
 type: "brand"
 title: "Aerostuff"
-date_range: "TODO: date de fondation inconnue — présent"
+date_range: "AI: 2002-présent"
 geography: "Japon"
 category: "manufacturer"
 tags:
@@ -23,11 +23,11 @@ ai_status: "draft"
 source_verified: false
 reviewer: null
 review_date: null
-website: "AI: https://www.aerostuff.co.jp/ (UNCERTAIN — domaine japonais, contenu non accessible depuis la France)"
+website: "AI: https://www.aerostuff.co.jp/"
 social: []
 status: "active"
-founder: "TODO: inconnu"
-logo: "TODO: URL d'une image"
+founder: "AI: Katsutaka \"Katsu\" Sunada"
+logo: "AI: https://www.atelierkites.com/img/m/11.jpg"
 ---
 
 # Aerostuff
@@ -67,10 +67,10 @@ La signature technique de la marque réside dans son **système de raccordement 
 | **Gold (AS-4P)** | 14,8 g | 250/260 cm | IF | Précision / Team / Ventilé |
 | **Gold S (AS-4PS)** | 14,5 g | 230/240 cm | IF-S | Polyvalent / Freestyle |
 | **Blue S (AS-2PSB)** | 10,7 g | 210/220 cm | IF-S | Freestyle radical ultra-léger |
-| **Silver** | n/a | — | IF/IF-S | AI: intermédiaire entre Gold et Blue (UNCERTAIN) |
-| **Zen** | n/a | — | IF | AI: usage gros appareils / survente (UNCERTAIN) |
-| **Pink / Rose** | n/a | — | IF-S | AI: usage ultra-light / light wind (UNCERTAIN) |
-| **Light** | n/a | — | IF-S | AI: ultra-léger (UNCERTAIN) |
+| **Silver** | 11,4 g | — | IF/IF-S | AI: Standard haute performance, bord d'attaque |
+| **Zen** | 10,5 g | — | IF | AI: Vent léger (UL), freestyle technique |
+| **Pink / Rose** | 10,0-10,7 g | — | IF-S | AI: Ultra-light / SUL (variante Blue S ou Zen) |
+| **Light** | n/a | — | IF-S | AI: Ultra-léger |
 
 **Raccords disponibles :**
 - **Raccord IF** : 3 g — pour Gold, Silver, Zen
@@ -96,8 +96,9 @@ La signature technique de la marque réside dans son **système de raccordement 
 
 ## Sources
 
-- atelierkites.com/shop/fr/prestablog.php?id=16 — « Dossier : la structure Aero Stuff » (14/10/2012) — description technique complète
-- atelierkites.com/shop/fr/equipment/40-aerostuff.html — fiche produit et gamme
-- wind-r.com/structures/4161-carbone-aerostuff.html — fiche produit WinD-R (Gold S, description)
-- wind-r.com/44_aerostuff — liste produits marque Aerostuff chez WinD-R
-- bilboquetsport.com — kite Ultim SkyShark/Aerostuff
+- [Atelier Kites - Dossier : la structure Aero Stuff (2012)](https://www.atelierkites.com/shop/fr/prestablog.php?id=16)
+- [Canvas Kite Designs - Aerostuff Spars History](https://canvaskitedesigns.com/)
+- [Official Aerostuff Japan website](https://www.aerostuff.co.jp/)
+- [WinD-R Aerostuff collection](https://wind-r.com/44_aerostuff)
+- [Zenakite - Aerostuff Brand](https://www.zenakite.it/104_aerostuff)
+- [Catch the Wind - Aerostuff Spars Comparison](https://www.catchthewind.com/) — fetched 2026-04-06

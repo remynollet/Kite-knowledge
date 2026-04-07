@@ -25,7 +25,7 @@ social:
   - "https://www.facebook.com/cerfvolantservices/"
 status: "active"
 founder: "AI: Dominique et Laurence Miquet"
-logo: "TODO: URL d'une image"
+logo: "AI: https://www.cerfvolantservice.com/img/logo-1643814431.jpg"
 ---
 
 # Cerf-Volant Service
@@ -85,3 +85,4 @@ Cerf-Volant Service intervient dans toute la France pour :
 - [village-parenty.fr — "Cerf Volant Service", entreprises locales](https://www.village-parenty.fr/entreprises-locales/cerf-volant-service) — consulté le 2026-04-06
 - [PagesJaunes — Cerf Volant Service Parenty](https://www.pagesjaunes.fr/pros/08429987) — consulté le 2026-04-06
 - [Facebook — Cerf Volant Service (cerfvolantservices)](https://www.facebook.com/cerfvolantservices/) — consulté le 2026-04-06
+- [Cerf-Volant Service Logo URL](https://www.cerfvolantservice.com/img/logo-1643814431.jpg) — fetched 2026-04-06

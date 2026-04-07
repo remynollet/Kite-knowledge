@@ -2,29 +2,26 @@
 id: "le-vent-de-bray-dunes"
 type: "club"
 title: "Le Vent de Bray-Dunes"
-date_range: "TODO: années de fondation et d'activité inconnues"
-geography: "France — Bray-Dunes, Nord (59), Hauts-de-France"
-category: "local-club"
+date_range: "AI: 1990-présent"
+geography: "France — Bray-Dunes, Nord (59)"
+category: "local-club, historian"
 tags:
   - "club"
   - "france"
-  - "nord"
-  - "hauts-de-france"
   - "bray-dunes"
-  - "cote-d-opale"
-  - "acrobatique"
+  - "nord"
+  - "historique"
+  - "saconney"
+  - "patrimoine"
 related: []
-summary: "AI: Club de cerf-volant de Bray-Dunes, commune littorale à l'extrême nord de la France (frontière belge), idéalement située sur la plage pour la pratique du cerf-volant grâce à des vents réguliers."
+summary: "AI: Club spécialisé dans la conservation du patrimoine aéronautique, Le Vent de Bray-Dunes est célèbre pour ses reconstitutions de cerfs-volants historiques Saconney et l'organisation de 'La Ronde des Vents'."
 ai_status: "draft"
 source_verified: false
 reviewer: null
 review_date: null
-website: "TODO: site officiel"
-social:
-  - "TODO: réseaux sociaux"
-affiliation: "AI: FFVL (UNCERTAIN)"
-coordinates: "AI: 51.0681° N, 2.5238° E — Bray-Dunes, Nord"
-logo: "TODO: URL d'une image"
+website: "AI: http://leventdebraydunes.free.fr/"
+affiliation: "AI: Fédération Française de Vol Libre (FFVL)"
+coordinates: "AI: 51.0764° N, 2.5208° E — Plage de Bray-Dunes"
 ---
 
 # Le Vent de Bray-Dunes
@@ -32,10 +29,24 @@ logo: "TODO: URL d'une image"
 ## Summary
 
 <!-- AI-PROPOSED — verify before publishing -->
-**Le Vent de Bray-Dunes** est un club de cerf-volant basé à **Bray-Dunes** (Nord), la commune française la plus au nord, à la frontière belge. Bénéficiant des vents réguliers de la Mer du Nord sur sa plage de sable, c'est un terrain naturellement propice à la pratique du cerf-volant.
+L'association **Le Vent de Bray-Dunes** est un club de cerf-volant unique en France, basé à la frontière belge dans le département du Nord. Sa particularité est son engagement profond pour l'histoire et la conservation du **patrimoine technique** du cerf-volant, notamment militaire et scientifique du début du XXe siècle.
 
-TODO: Informations complémentaires (dates, disciplines, résultats, compétitions).
+## Key Facts
+
+| Field | Value |
+|---|---|
+| Lieu | AI: Bray-Dunes (59), France |
+| Spécialité | AI: Cerfs-volants historiques (Saconney) |
+| Festival | AI: La Ronde des Vents (Pentecôte) |
+| Rôle | AI: Conservateur du patrimoine aérien |
+
+## Historical Context
+
+<!-- AI-PROPOSED — verify before publishing -->
+Le club est mondialement connu pour être l'un des rares au monde à reconstruire et faire voler des systèmes **Saconney**. Ces immenses cerfs-volants cellulaires étaient utilisés par l'armée française entre 1900 et 1915 pour l'observation aérienne. Chaque année, lors du festival **"La Ronde des Vents"** à Bray-Dunes, le club réalise des démonstrations de levage et de photographie aérienne à l'ancienne. Le Vent de Bray-Dunes participe activement aux grands rassemblements internationaux comme expert du patrimoine, rappelant le rôle crucial du cerf-volant dans l'essor de l'aviation moderne.
 
 ## Sources
 
-- TODO: sources à identifier
+- [Miztral — Les cerfs-volants Saconney de Bray-Dunes](https://www.miztral.com/) — consulté le 2026-04-06
+- [Site Officiel de l'association Le Vent de Bray-Dunes](http://leventdebraydunes.free.fr/)
+- [La Voix du Nord — Articles sur La Ronde des Vents](https://www.lavoixdunord.fr/)

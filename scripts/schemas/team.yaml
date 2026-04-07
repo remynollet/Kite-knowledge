@@ -1,0 +1,87 @@
+# Schema for entity type: team
+type: team
+fields:
+  id:
+    type: string
+    required: true
+    description: "Kebab-case slug matching the filename exactly."
+    notes: "No accents, no spaces, no uppercase. Must equal filename without .md extension."
+  type:
+    type: string
+    required: true
+    allowed_values: [team]
+    description: "Fixed value: team"
+  title:
+    type: string
+    required: true
+    description: "Official team name."
+  date_range:
+    type: string
+    required: true
+    description: "Active years (e.g., '2010-present' or '1995-2005')."
+  geography:
+    type: string
+    required: true
+    description: "Country or region where the team is based."
+  category:
+    type: string
+    required: true
+    description: "Team category: display-team, competition-team, workshop-team, etc."
+  tags:
+    type: list
+    required: true
+    description: "At least one tag must match type 'team'. Additional domain tags welcome."
+  related:
+    type: list
+    required: true
+    description: "Relative paths to related docs/ entities. Must use `../type/slug.md` for cross-directory links. May be empty list []."
+  summary:
+    type: string
+    required: true
+    description: "One-sentence summary shown in EntityHeader component."
+  ai_status:
+    type: string
+    required: true
+    allowed_values: [draft, in-review, validated]
+    description: "Editorial lifecycle state."
+  source_verified:
+    type: bool
+    required: true
+    description: "True only when all sources have been checked by a human reviewer."
+  reviewer:
+    type: string
+    required: false
+    description: "GitHub username of reviewer. Null until reviewed."
+    notes: "Must not be null in docs/ (enforced by validate_frontmatter.py extended checks)."
+  review_date:
+    type: string
+    required: false
+    description: "ISO date YYYY-MM-DD of last review. Null until reviewed."
+  members:
+    type: list
+    required: false
+    description: "List of member slugs (references to person entities)."
+  disciplines:
+    type: list
+    required: false
+    description: "List of flight disciplines (e.g., 2-line acrobatic, 4-line, team ballet)."
+  achievements:
+    type: list
+    required: false
+    description: "List of competition titles, records, or major performances."
+  website:
+    type: string
+    required: false
+    description: "Official team website URL."
+  social:
+    type: list
+    required: false
+    description: "List of social media links."
+  logo:
+    type: string
+    required: false
+    description: "Path to the team's logo image."
+  pinterest_board_id:
+    type: string
+    required: false
+    description: "ID of the Pinterest board to embed (e.g., 'username/board-name')."

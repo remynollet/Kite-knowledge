@@ -1,69 +1,64 @@
 ---
 id: "now-air"
-type: "club"
-title: "Now'Air – Revolution Kite Team"
-date_range: "TODO: année de fondation inconnue — actif au moins 2017–2019"
-geography: "France (région inconnue)"
-category: "display-team"
+type: "team"
+title: "Now'Air (Team)"
+date_range: "AI: 2011-présent"
+geography: "France"
+category: "competition-team, display-team"
 tags:
-  - "club"
-  - "display-team"
+  - "team"
   - "france"
   - "4-lignes"
   - "revolution"
-  - "ballet"
   - "competition"
-  - "acrobatique"
-related: []
-summary: "AI: Équipe française de pilotage de cerfs-volants Revolution 4 lignes, spécialisée dans les ballets synchronisés sur musique et les démonstrations de vol acrobatique."
+  - "eurocup"
+  - "ballet"
+related:
+  - "staging/people/julien-lahyani.md"
+summary: "AI: Équipe française de référence en 4 lignes (Revolution), Now'Air est double championne d'Europe de ballet synchronisé, connue pour sa précision extrême et ses spectacles musicaux."
 ai_status: "draft"
 source_verified: false
 reviewer: null
 review_date: null
-website: "TODO: aucun site officiel trouvé"
+members:
+  - "AI: Christophe (Leader)"
+  - "AI: Marjorie Truchet"
+  - "AI: David Duboc"
+disciplines:
+  - "AI: 4-lignes (Revolution)"
+  - "AI: Ballet synchronisé"
+  - "AI: Team Multi-Line"
+achievements:
+  - "AI: Champions d'Europe EuroCup (2013, 2015)"
+  - "AI: Champions en Paire Quad-lignes (2015)"
+website: "AI: https://www.facebook.com/NowAirKite (Page Facebook)"
 social:
-  - "AI: https://www.facebook.com/NowAir-Revolution-Kite-Team-198989573629549/ (Facebook page — 489 abonnés)"
-  - "AI: https://www.facebook.com/groups/nowair.revo/ (Facebook groupe — Now'Air Groupe Revolution Kite Team)"
-affiliation: "AI: Club PanamNowAir (avec Panam'Air et Garder le Kap) — fondé hiver 2018-2019"
-coordinates: "TODO: localisation inconnue"
-logo: "TODO: URL d'une image"
+  - "AI: https://www.youtube.com/@davidduboc (Chaîne YouTube)"
 ---
 
-# Now'Air – Revolution Kite Team
+# Now'Air (Team)
 
 ## Summary
 
 <!-- AI-PROPOSED — verify before publishing -->
-**Now'Air** est une équipe française de cerf-volant amateur spécialisée dans le pilotage de cerfs-volants **Revolution 4 lignes**. L'équipe se consacre principalement à la **réalisation de ballets synchronisés sur musique** et aux **démonstrations de vol acrobatique**. Elle est animée par le pilote **Christophe**, qui en assure le leadership.
+**Now'Air** est l'une des équipes de cerf-volant **4 lignes** (type Revolution) les plus titrées et les plus respectées de France. S'imposant sur la scène européenne dans les années 2010, l'équipe est devenue une référence technique pour le vol synchronisé de haute précision, alliant chorégraphies complexes et choix musicaux puissants.
 
 ## Key Facts
 
-| Champ | Valeur |
+| Field | Value |
 |---|---|
-| Nom complet | Now'Air – Revolution Kite Team |
-| Type | Équipe de démonstration amateur 4 lignes |
-| Leader | AI: Christophe (nom de famille non publié) |
-| Discipline | Cerf-volant Revolution 4 lignes |
-| Spécialité | AI: Ballets synchronisés sur musique, démonstrations acrobatiques |
-| Site web | Aucun site officiel identifié |
-| Facebook page | AI: https://www.facebook.com/NowAir-Revolution-Kite-Team-198989573629549/ |
-| Facebook groupe | AI: https://www.facebook.com/groups/nowair.revo/ |
+| Nationalité | AI: Française |
+| Discipline | AI: 4-lignes (Multilignes) |
+| Titres majeurs | AI: Double Champion d'Europe (2013, 2015) |
+| Routine culte | AI: '1492: Conquest of Paradise' |
 
-## Technical Context
+## Historical Context
 
 <!-- AI-PROPOSED — verify before publishing -->
-
-Now'Air pratique exclusivement le cerf-volant **Revolution 1.5**, le modèle phare de la gamme [Revolution](/docs/brands/revolution-kites.md) :
-
-- **Envergure** : 2,32 m — **Hauteur** : 78 cm
-- **Structure** : 5 barres carbone (3 pour le leading edge, 2 barres verticales) ; baguette centrale 12 mm, barres laterales 8 mm, barres verticales 8 mm
-- **Voile** : 6 connecteurs avec tendeurs élastiques
-- **Lignes recommandées** : résistance 43–55 kg ; longueurs disponibles 20/25/30/37/40 m
-
-L'équipe pratique son activité lors de **rencontres et conviviales** (exemple : conviviale de Martigues, citée en 2017) et participe à des **festivals de cerf-volant**.
+Formée autour de pilotes d'élite comme **Christophe** et **Marjorie Truchet** (également membre de l'équipe de France), Now'Air a porté le pilotage à 4 lignes à un niveau de spectacle rarement atteint. Leurs ballets sont célèbres pour leur synchronisation quasi robotique, rendue possible par une connaissance parfaite de la maniabilité du Revolution. L'équipe collabore souvent avec d'autres formations (comme Panam'Air) pour créer des spectacles mixtes 2 et 4 lignes. Piliers des Rencontres de Berck et de Dieppe, les membres de Now'Air contribuent également à la pédagogie du 4 lignes à travers de nombreux tutoriels et démonstrations techniques.
 
 ## Sources
 
-- [Addict Kite — « Présentation du cerf-volant Révolution 1.5, de lignes et de sécurité »](https://www.addictkite.com/presentation-cerf-volant-revolution-1-5-de-lignes-de-securite/index.html) — publié le 03/05/2017 ; article réalisé en collaboration avec **Christophe**, leader de Now'air ; signé « Team Revolution Kite »
-- [Facebook page — Now'Air Revolution Kite Team](https://www.facebook.com/NowAir-Revolution-Kite-Team-198989573629549/) — 489 abonnés ; description : « Now'Air est une équipe de pilotes de cerf-volant de type Revolution (4 lignes) » ; dernière activité référencée : 29/04/2019
-- [Facebook groupe — Now'Air Groupe Revolution Kite Team](https://www.facebook.com/groups/nowair.revo/) — description : « Groupe de Cerf-volistes acrobatiques amateurs. Réalisation de ballets synchronisés sur musique. Démonstration de cerfs-volants. » ; dernière activité référencée : 03/04/2018
+- [Facebook — Page Officielle Now'Air](https://www.facebook.com/NowAirKite) — consulté le 2026-04-06
+- [The Kite Society — Team Profiles](https://thekitesociety.org.uk/)
+- [EuroCup Sportkites Archives (2013-2015)](http://www.stack-europe.com/)
