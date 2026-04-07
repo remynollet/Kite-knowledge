@@ -1,15 +1,15 @@
 # Kite-knowledge
 
-A structured, source-aware knowledge base covering kite history and technical evolution from 1850 to the present.
+Une base de connaissances structurée et sourcée couvrant l'histoire du cerf-volant et son évolution technique de 1850 à nos jours.
 
 ## Sections
 
-- [People](people/index.md)
-- [Brands](brands/index.md)
-- [Models](models/index.md)
-- [Materials](materials/index.md)
-- [Frames](frames/index.md)
+- [Personnalités](people/index.md)
+- [Marques](brands/index.md)
+- [Modèles](models/index.md)
+- [Matériaux](materials/index.md)
+- [Armatures](frames/index.md)
 - [Clubs](clubs/index.md)
-- [Pilots](pilots/index.md)
-- [Timeline](timeline/index.md)
-- [Releases](releases/index.md)
+- [Pilotes](pilots/index.md)
+- [Chronologie](timeline/index.md)
+- [Journal des publications](releases/index.md)

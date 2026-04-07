@@ -19,6 +19,7 @@ ai_status: "validated"
 source_verified: true
 reviewer: "remynollet"
 review_date: "2026-04-06"
+pinterest_board_id: "pinterest/official-news"
 website: "https://revkites.com/"
 status: "active"
 founder: "Joe, Jim et David Hadzicki"

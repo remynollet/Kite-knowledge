@@ -1,6 +1,19 @@
+---
+title: "Timeline"
+type: "timeline_hub"
+summary: "Browse kite history from 1850 to the present, organized by era."
+ai_status: "validated"
+reviewer: "Remy"
+review_date: "2026-04-06"
+---
+
 # Timeline
 
 Browse kite history from 1850 to the present, organized by era. Each event page connects to the people, brands, and models that shaped it.
+
+## Interactive Timeline
+
+{% include "partials/timeline-interactive.html" %}
 
 ## Eras
 

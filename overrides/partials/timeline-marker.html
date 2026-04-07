@@ -4,6 +4,9 @@
   Shows the entity's chronological position and provides a contextual link into the timeline.
   NOT rendered on pages of type "timeline".
   Requires: page.meta.date_range, page.meta.type
+
+  Dependencies:
+    config.site_url - used for absolute navigation links
 #}
 {% if page.meta and page.meta.date_range and page.meta.type != "timeline" %}
 <aside class="timeline-marker" aria-label="Timeline context for this {{ page.meta.type }}">

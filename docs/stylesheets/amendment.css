@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Kite-knowledge — Suggest Amendment Button Styling (Epic 9.1)
+   ========================================================================== */
+
+.amendment-section {
+  margin-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.amendment-section hr {
+  display: none; /* We use border-top instead */
+}
+
+.amendment-content {
+  padding: var(--space-3) 0;
+}
+
+.amendment-content p {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.amendment-content .twemoji {
+  width: 20px;
+  height: 20px;
+  color: var(--color-primary-light);
+}
+
+.amendment-content a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.amendment-content a:hover {
+  color: var(--color-primary-light);
+  text-decoration: underline;
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] .amendment-section {
+  border-top-color: var(--color-border-strong);
+}

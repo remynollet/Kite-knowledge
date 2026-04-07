@@ -34,7 +34,7 @@ fields:
   related:
     type: list
     required: true
-    description: "Relative paths to related docs/ entities. May be empty list []."
+    description: "Relative paths to related docs/ entities. Must use `../type/slug.md` for cross-directory links. May be empty list []."
   summary:
     type: string
     required: true
@@ -69,3 +69,7 @@ fields:
     type: list
     required: false
     description: "Primary applications (e.g., sail, frame, bridle, line)."
+  pinterest_board_id:
+    type: string
+    required: false
+    description: "ID of the Pinterest board to embed (e.g., 'username/board-name')."

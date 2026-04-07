@@ -22,6 +22,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      # Step 0 — Staging structure check
+      - name: Step 0 — Staging Structure Check
+        run: python scripts/check_staging_structure.py
+
       # Step 1 — Frontmatter lint
       - name: Step 1 — Frontmatter Lint
         run: python scripts/validate_frontmatter.py docs/
@@ -38,6 +42,10 @@ jobs:
       # Step 3 — Broken link check
       - name: Step 3 — Broken Link Check
         run: python scripts/check_links.py docs/
+
+      # Step 3.5 — Generate Timeline Data
+      - name: Step 3.5 — Generate Timeline Data
+        run: python scripts/generate_timeline_json.py
 
       # Step 4 — MkDocs strict build
       - name: Step 4 — MkDocs Strict Build

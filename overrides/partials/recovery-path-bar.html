@@ -8,6 +8,9 @@
     - page.meta.date_range → era link in timeline
     - page.meta.related → direct entity links when available
   Always offers: section browse, tag search, timeline era link.
+
+  Dependencies:
+    config.site_url - used for absolute navigation links
 #}
 {% if page.meta and (page.meta.stub == true or page.meta.ai_status == "draft") %}
 

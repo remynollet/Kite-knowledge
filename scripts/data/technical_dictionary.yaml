@@ -1,0 +1,67 @@
+# Technical Dictionary for Kite-knowledge (i18n)
+# Used by translation scripts and glossary generation to ensure terminological precision.
+# Source of truth for translations of specific technical kite terms.
+
+terms:
+  - id: bridle
+    fr: bridage
+    en: bridle
+    de: Waage
+    it: briglia
+    es: brida
+    description_fr: "Ensemble de lignes reliant le cerf-volant au fil de retenue, permettant de régler son angle d'attaque."
+    description_en: "A system of lines connecting the kite to the flying line, used to control the angle of attack."
+
+  - id: spar
+    fr: vergue
+    en: spar
+    de: Spreize
+    it: traversa
+    es: travesaño
+    description_fr: "Élément rigide de l'armature (en carbone, fibre de verre ou bois) qui maintient la voile tendue."
+    description_en: "A rigid element of the frame (made of carbon, fiberglass, or wood) that keeps the sail taut."
+
+  - id: sail
+    fr: voile
+    en: sail
+    de: Segel
+    it: vela
+    es: vela
+    description_fr: "La partie souple du cerf-volant qui capture le vent pour générer de la portance."
+    description_en: "The flexible part of the kite that captures the wind to generate lift."
+
+  - id: lift
+    fr: portance
+    en: lift
+    de: Auftrieb
+    it: portanza
+    es: sustentación
+    description_fr: "La force aérodynamique qui permet au cerf-volant de s'élever et de se maintenir en l'air."
+    description_en: "The aerodynamic force that allows the kite to rise and stay aloft."
+
+  - id: leading-edge
+    fr: bord d'attaque
+    en: leading edge
+    de: Leitkante
+    it: bordo d'attacco
+    es: borde de ataque
+    description_fr: "Le bord avant de la voile qui rencontre le vent en premier."
+    description_en: "The front edge of the sail that meets the wind first."
+
+  - id: trailing-edge
+    fr: bord de fuite
+    en: trailing edge
+    de: Schleppkante
+    it: bordo d'uscita
+    es: borde de fuga
+    description_fr: "Le bord arrière de la voile où le vent s'échappe."
+    description_en: "The rear edge of the sail where the wind flows off."
+
+  - id: spine
+    fr: quille
+    en: spine
+    de: Kiel
+    it: chiglia
+    es: quilla
+    description_fr: "Élément central de l'armature qui court de haut en bas le long de l'axe de symétrie."
+    description_en: "The central element of the frame running vertically along the axis of symmetry."

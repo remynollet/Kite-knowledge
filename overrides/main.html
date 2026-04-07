@@ -1,5 +1,16 @@
 {% extends "base.html" %}
 
+{# ── Epic 7.1 & 7.3: Add preconnect and external assets for visual components ── #}
+{% block extrahead %}
+  {% if page.meta and page.meta.type == "timeline_hub" %}
+    <link rel="preconnect" href="https://cdn.knightlab.com">
+    <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/3.9.10/css/timeline.css">
+  {% endif %}
+  {% if page.meta and page.meta.pinterest_board_id %}
+    <link rel="preconnect" href="https://assets.pinterest.com">
+  {% endif %}
+{% endblock %}
+
 {# Override the article content block to inject Kite-knowledge UX components #}
 {% block content %}
 <article class="md-content__inner md-typeset">
@@ -10,7 +21,7 @@
   {% endif %}
 
   {# ── Epic 2.2 + Epic 4.1: EntityHeader with ValidationBadge (entity pages only) ── #}
-  {% if page.meta and page.meta.type %}
+  {% if page.meta and page.meta.type and page.meta.type != "meta" %}
     {% include "partials/validation-badge.html" %}
     {% include "partials/entity-header.html" %}
     {% include "partials/key-facts-block.html" %}
@@ -21,19 +32,34 @@
     {{ page.content }}
   {% endblock %}
 
-  {# ── Epic 3.2: TimelineMarker (entity pages except timeline type) ── #}
-  {% if page.meta and page.meta.type and page.meta.type != "timeline" and page.meta.date_range %}
+  {# ── Epic 7.3: Pinterest Board Widget ── #}
+  {% if page.meta and page.meta.pinterest_board_id %}
+    {% include "partials/pinterest-board.html" %}
+  {% endif %}
+
+  {# ── Epic 8.2: Technical Archive & Blueprint Panel ── #}
+  {% if page.meta and (page.meta.patent_url or page.meta.plan_url or page.meta.archive_file) %}
+    {% include "partials/archive-panel.html" %}
+  {% endif %}
+
+  {# ── Epic 3.2: TimelineMarker (entity pages except timeline/meta type) ── #}
+  {% if page.meta and page.meta.type and page.meta.type != "timeline" and page.meta.type != "timeline_hub" and page.meta.type != "meta" and page.meta.date_range %}
     {% include "partials/timeline-marker.html" %}
   {% endif %}
 
   {# ── Epic 2.4: RelatedEntitiesModule (entity pages with related entries) ── #}
-  {% if page.meta and page.meta.type %}
+  {% if page.meta and page.meta.type and page.meta.type != "meta" %}
     {% include "partials/related-entities.html" %}
   {% endif %}
 
   {# ── Epic 4.2: Source Citation Panel (entity pages) ── #}
-  {% if page.meta and page.meta.type %}
+  {% if page.meta and page.meta.type and page.meta.type != "meta" %}
     {% include "partials/source-citation-panel.html" %}
+  {% endif %}
+
+  {# ── Epic 9.1: Suggest Amendment Button (all typed pages) ── #}
+  {% if page.meta and page.meta.type %}
+    {% include "partials/amendment-button.html" %}
   {% endif %}
 
   {# ── Epic 4.4 / Story 2.8: Recovery Path Bar (stub pages) ── #}
@@ -42,4 +68,15 @@
   {% endif %}
 
 </article>
+{% endblock %}
+
+{# ── Epic 7.1 & 7.3: Add external scripts ── #}
+{% block scripts %}
+  {{ super() }}
+  {% if page.meta and page.meta.type == "timeline_hub" %}
+    <script async defer src="https://cdn.knightlab.com/libs/timeline3/3.9.10/js/timeline-min.js"></script>
+  {% endif %}
+  {% if page.meta and page.meta.pinterest_board_id %}
+    <script async defer src="https://assets.pinterest.com/js/pinit.js"></script>
+  {% endif %}
 {% endblock %}

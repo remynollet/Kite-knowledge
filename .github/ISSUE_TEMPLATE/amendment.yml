@@ -1,0 +1,45 @@
+name: Suggest an Amendment
+description: Propose a correction or improvement to a knowledge base entry.
+title: "[Amendment] "
+labels: ["amendment", "community-contribution"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to the Kite Knowledge base! Your expertise helps maintain the accuracy and depth of this project.
+  - type: input
+    id: page_url
+    attributes:
+      label: Page URL
+      description: The URL of the page you would like to amend.
+      placeholder: https://remynollet.github.io/Kite-knowledge/path/to/page
+    validations:
+      required: true
+  - type: dropdown
+    id: correction_type
+    attributes:
+      label: Type of Amendment
+      options:
+        - Factual Correction
+        - Typo / Spelling
+        - New Source / Reference
+        - Content Addition
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the change
+      description: Please describe what needs to be changed and why.
+      placeholder: The launch date for this model should be 1992, not 1991.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Supporting Evidence / Sources
+      description: Please provide links or citations to verify this information.
+      placeholder: Official catalog 1992, page 4.
+    validations:
+      required: true

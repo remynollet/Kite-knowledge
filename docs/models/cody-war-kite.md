@@ -19,6 +19,8 @@ ai_status: "validated"
 source_verified: true
 reviewer: "remynollet"
 review_date: "2026-04-06"
+patent_url: "https://patents.google.com/patent/US4892272A/en"
+archive_file: "docs/assets/archive/US4892272A.pdf"
 manufacturer: "S.F. Cody (Workshop)"
 designer: "Samuel Franklin Cody"
 wingspan: "Jusqu'à 9 mètres (selon version)"

@@ -39,19 +39,22 @@ This creates `staging/people/peter-lynn.md` with all required frontmatter fields
 1. Open `staging/people/peter-lynn.md`
 2. Fill in all `TODO` fields with accurate content
 3. Add at least one verifiable source in the `## Sources` section
-4. When complete, manually update:
-   - `ai_status: "validated"`
-   - `reviewer: "your-github-username"`
-   - `source_verified: true` (only if you have verified all sources)
-   - `review_date: "YYYY-MM-DD"`
-
-   > **Note:** `in-review` is an optional intermediate state for collaborative review. The promotion script (`promote_staging.py`) requires `ai_status: "validated"` — set this only once you are satisfied with the content and sources.
-
-### Step 3: Validate and Promote
-
-Run the validation + promotion script:
+4. When complete, submit for review:
 
 ```bash
+python scripts/promote_staging.py staging/people/peter-lynn.md --to-review
+```
+
+This script validates mandatory fields and updates `ai_status: "in-review"`.
+
+> **Note:** The final promotion to `docs/` via `promote_staging.py` (without `--to-review`) requires `ai_status: "validated"`. This state is typically set by the maintainer after successful review.
+
+### Step 3: Validate and Promote (Maintainer)
+
+Once the review is successful, the maintainer or authorized contributor performs the final promotion:
+
+```bash
+# Set ai_status: validated, reviewer, and source_verified: true manually in the file
 python scripts/promote_staging.py staging/people/peter-lynn.md
 ```
 
@@ -65,37 +68,35 @@ git commit -m "feat: add person peter-lynn"
 git push origin your-branch-name
 ```
 
-Then open a PR targeting `main`. The CI gate will run 4 checks automatically:
+Then open a PR targeting `main`. The CI gate will run several checks automatically:
 
-1. **Frontmatter lint** — all required fields present and correctly typed
-2. **AI draft block** — no `ai_status: draft` in `docs/`
-3. **Broken link check** — no broken internal links
-4. **MkDocs strict build** — no warnings or errors
+1. **Step 0 — Staging Structure Check** — ensures the `staging/` directory structure is intact.
+2. **Step 1 — Frontmatter lint** — all required fields present and correctly typed.
+3. **Step 2 — AI draft block** — no `ai_status: draft` in `docs/`.
+4. **Step 3 — Broken link check** — no broken internal links.
+5. **Step 4 — MkDocs build** — no warnings or errors.
 
-Merge is only allowed when all 4 checks pass.
+Merge is only allowed when all checks pass.
 
 ---
 
-## Repository Setup (Maintainer)
+## Internationalization (i18n)
 
-### Branch Protection (One-time Setup)
+Kite-knowledge supports 5 core languages: **French (default), English, German, Italian, and Spanish**.
 
-In GitHub repository **Settings → Branches → Add rule**:
+### How it works
 
-- Branch name pattern: `main`
-- ☑ Require a pull request before merging
-- ☑ Require status checks to pass before merging
-  - Add required check: `Content Validation`
-- ☑ Require branches to be up to date before merging
-- ☑ Do not allow bypassing the above settings
+The site uses the `mkdocs-static-i18n` plugin.
+- A file named `filename.md` is served as the **French** version.
+- A file named `filename.en.md` is served as the **English** version.
+- Other extensions: `.de.md` (German), `.it.md` (Italian), `.es.md` (Spanish).
 
-### GitHub Pages (One-time Setup)
+### Contributing Translations
 
-After the first push to `main` triggers the deploy workflow (creating a `gh-pages` branch):
-
-In GitHub repository **Settings → Pages**:
-
-- Source: Deploy from branch `gh-pages` / `/ (root)`
+1. Locate the validated file in `docs/` (e.g., `docs/people/peter-lynn.md`).
+2. Create a copy with the language extension (e.g., `docs/people/peter-lynn.en.md`).
+3. Translate the content and update the frontmatter if necessary (note: technical metadata like `related`, `patent_url`, `image` must remain identical).
+4. Mark the file with `ai_translated: true` if generated via AI, and `ai_status: validated` once reviewed by a native speaker.
 
 ---
 
@@ -120,3 +121,12 @@ python scripts/validate_frontmatter.py staging/people/peter-lynn.md
 ```bash
 python scripts/check_links.py docs/
 ```
+
+## Troubleshooting
+
+### Relative Links Error in `related:`
+Ensure you use the correct relative path format. Cross-directory links MUST start with `../`.
+Example: From `people/peter-lynn.md` to `models/cody-war-kite.md`, use `../models/cody-war-kite.md`.
+
+### CI Failure: "Missing staging subdirectories"
+Ensure that `staging/` contains all 11 required subfolders (brands, clubs, festivals, frames, materials, models, people, pilots, shops, teams, timeline). If one is missing, create it (even if empty, with a `.gitkeep` file).

@@ -1,0 +1,14 @@
+{# ── Epic 9.1: Suggest Amendment Button ── #}
+<div class="amendment-section">
+  <hr />
+  <div class="amendment-content">
+    <p>
+      <span class="twemoji">{% include ".icons/material/pencil.svg" %}</span>
+      Notice an error or have more details to add? 
+      <a href="https://github.com/remynollet/Kite-knowledge/issues/new?template=amendment.yml&title=[Amendment]+{{ page.title | urlencode }}&page_url={{ page.canonical_url | urlencode }}" 
+         target="_blank" rel="noopener">
+        <strong>Suggest an amendment</strong>
+      </a>
+    </p>
+  </div>
+</div>

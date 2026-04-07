@@ -117,6 +117,26 @@ def validate_file(filepath: Path) -> list[str]:
                 f"(expected '{entity_type}' in tags, got {tags})"
             )
 
+    # validate archive_file (Story 8.1)
+    archive_file = fm.get("archive_file")
+    if archive_file:
+        # 1. Existence check
+        # Paths in frontmatter are relative to docs/ according to architecture
+        # But for robustness, let's assume they might be relative to the project root
+        # if they start with docs/
+        project_root = Path(__file__).parent.parent
+        archive_path = project_root / archive_file
+        
+        if not archive_path.exists():
+            errors.append(f"{filepath}: archive_file not found: {archive_file}")
+        
+        # 2. Naming check (kebab-case or official ID)
+        filename = archive_path.name
+        if not re.match(r"^[a-z0-9\-.]+$", filename, re.IGNORECASE):
+            errors.append(
+                f"{filepath}: archive_file name '{filename}' must be kebab-case or official identifier (no spaces/accents)"
+            )
+
     return errors
 
 

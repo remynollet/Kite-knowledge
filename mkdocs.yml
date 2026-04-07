@@ -31,6 +31,7 @@ theme:
     - search.highlight
     - search.suggest
     - search.share
+    - i18n.language_switcher
 
 extra_css:
   - stylesheets/theme.css
@@ -38,10 +39,15 @@ extra_css:
   - stylesheets/key-facts-block.css
   - stylesheets/related-entities.css
   - stylesheets/badges.css
+  - stylesheets/archive-panel.css
   - stylesheets/timeline.css
+  - stylesheets/timeline-interactive.css
+  - stylesheets/pinterest.css
   - stylesheets/responsive.css
   - stylesheets/recovery-path-bar.css
   - stylesheets/source-citation-panel.css
+  - stylesheets/amendment.css
+  - stylesheets/contributors.css
   - stylesheets/ai-content-warning.css
 
 plugins:
@@ -103,10 +109,22 @@ nav:
       - EO Kite: clubs/eo-kite.md
       - Is'Air (Pair): clubs/is-air.md
   - Pilots: pilots/index.md
+  - Shops:
+      - Home: shops/index.md
+      - Bilboquet: shops/bilboquet.md
+      - Drachen Metropolis: shops/drachen-metropolis.md
+      - Le Cerf-Volant: shops/le-cerf-volant.md
   - Timeline:
       - Home: timeline/index.md
       - 1893 Invention of the Box Kite: timeline/1893-invention-box-kite.md
   - Releases:
       - Home: releases/index.md
       - April 2026: releases/2026-04.md
+  - Community:
+      - Contributors: contributors.md
+  - Glossary: glossary/index.md
+.md
+      - April 2026: releases/2026-04.md
+  - Community:
+      - Contributors: contributors.md
   - Glossary: glossary/index.md

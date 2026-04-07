@@ -5,6 +5,9 @@
   Visually distinct warning banner (amber background).
   Includes: IA generation message, human review disclosure, feedback link.
   Positioned above EntityHeader (first element in content area).
+
+  Dependencies:
+    config.repo_url - used for feedback issues link
 #}
 {% if page.meta and page.meta.ai_status == "in-review" %}
 <div class="ai-warning-banner" role="alert" aria-live="polite">

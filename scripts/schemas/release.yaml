@@ -30,7 +30,7 @@ fields:
   related:
     type: list
     required: true
-    description: "May be empty list []. Links to key pages mentioned in this release."
+    description: "Relative paths to related docs/ entities. Must use `../type/slug.md` for cross-directory links. May be empty list []."
   ai_status:
     type: string
     required: true

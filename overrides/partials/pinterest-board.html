@@ -1,0 +1,12 @@
+{# ── Epic 7.3: Pinterest Board Widget ── #}
+{% if page.meta and page.meta.pinterest_board_id %}
+<div class="pinterest-board-container" style="margin: 2em 0; width: 100%;">
+  <h3 id="visual-gallery">Visual Gallery</h3>
+  <a data-pin-do="embedBoard" 
+     data-pin-board-width="auto" 
+     data-pin-scale-height="320" 
+     data-pin-scale-width="80" 
+     href="https://www.pinterest.com/{{ page.meta.pinterest_board_id }}/">
+  </a>
+</div>
+{% endif %}

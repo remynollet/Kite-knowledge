@@ -1,0 +1,39 @@
+{# ── Epic 8.2: Technical Archive & Blueprint Panel ── #}
+{% if page.meta and (page.meta.patent_url or page.meta.plan_url or page.meta.archive_file) %}
+<div class="technical-archive-panel">
+  <h3 id="technical-resources">Technical Resources</h3>
+  <div class="archive-links-container">
+    
+    {# 1. Local Archive File (Primary Preservation) #}
+    {% if page.meta.archive_file %}
+    <div class="archive-link-item local-archive">
+      <span class="twemoji">{% include ".icons/material/file-pdf-box.svg" %}</span>
+      <a href="{{ base_url }}/{{ page.meta.archive_file }}" target="_blank">
+        <strong>Technical Document</strong> (Local Archive)
+      </a>
+    </div>
+    {% endif %}
+
+    {# 2. Official Patent Link #}
+    {% if page.meta.patent_url %}
+    <div class="archive-link-item external-patent">
+      <span class="twemoji">{% include ".icons/material/fountain-pen-tip.svg" %}</span>
+      <a href="{{ page.meta.patent_url }}" target="_blank" rel="noopener">
+        <strong>Official Patent</strong> (Google Patents)
+      </a>
+    </div>
+    {% endif %}
+
+    {# 3. Construction Plans Link #}
+    {% if page.meta.plan_url %}
+    <div class="archive-link-item external-plan">
+      <span class="twemoji">{% include ".icons/material/math-compass.svg" %}</span>
+      <a href="{{ page.meta.plan_url }}" target="_blank" rel="noopener">
+        <strong>Construction Plans</strong> (External Source)
+      </a>
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+{% endif %}

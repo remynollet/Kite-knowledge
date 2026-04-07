@@ -1,0 +1,50 @@
+{# ── Epic 7.1: Interactive Visual Timeline Component ── #}
+<div id="timeline-embed">
+  <div style="padding: 2em; text-align: center; color: #666;">
+    <p>Loading Interactive Timeline...</p>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function initTimeline() {
+    if (typeof TL !== 'undefined') {
+      const timelineData = {
+        "title": {
+          "text": {
+            "headline": "Kite History Timeline",
+            "text": "<p>A visual journey through the evolution of kite technology and culture from 1850 to the present.</p>"
+          }
+        },
+        "events": []
+      };
+
+      const options = {
+        initial_zoom: 2,
+        theme: "light",
+        font: "default",
+        is_embed: true
+      };
+
+      // Attempt to load external data if it exists
+      fetch('{{ base_url }}/assets/data/timeline.json')
+        .then(response => {
+          if (response.ok) return response.json();
+          throw new Error('Timeline data not found, using fallback.');
+        })
+        .then(data => {
+          window.timeline = new TL.Timeline('timeline-embed', data, options);
+        })
+        .catch(error => {
+          console.warn(error.message);
+          // Fallback to minimal data to avoid crash
+          window.timeline = new TL.Timeline('timeline-embed', timelineData, options);
+        });
+    } else {
+      // Retry after a short delay if TL is not yet loaded (async script)
+      setTimeout(initTimeline, 100);
+    }
+  }
+
+  // Initialize when DOM is ready
+  document.addEventListener('DOMContentLoaded', initTimeline);
+</script>

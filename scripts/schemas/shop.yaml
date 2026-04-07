@@ -1,0 +1,69 @@
+# Schema for entity type: shop
+type: shop
+fields:
+  id:
+    type: string
+    required: true
+    description: "Kebab-case slug matching the filename exactly."
+  type:
+    type: string
+    required: true
+    allowed_values: [shop]
+    description: "Fixed value: shop"
+  title:
+    type: string
+    required: true
+    description: "Full name of the retail shop."
+  date_range:
+    type: string
+    required: true
+    description: "Operating years (e.g., '1995-present')."
+  geography:
+    type: string
+    required: true
+    description: "Physical location (City, Country)."
+  category:
+    type: string
+    required: true
+    description: "Retail category (e.g., online, physical, distributor)."
+  tags:
+    type: list
+    required: true
+    description: "Must contain 'shop'."
+  related:
+    type: list
+    required: true
+    description: "Relative paths to related docs/ entities. Must use `../type/slug.md` for cross-directory links. May be empty list []."
+  summary:
+    type: string
+    required: true
+    description: "Short description for headers."
+  ai_status:
+    type: string
+    required: true
+    allowed_values: [draft, in-review, validated]
+  source_verified:
+    type: bool
+    required: true
+  reviewer:
+    type: string
+    required: false
+  review_date:
+    type: string
+    required: false
+  website:
+    type: string
+    required: false
+    description: "Official website URL."
+  address:
+    type: string
+    required: false
+    description: "Physical address if applicable."
+  specialization:
+    type: list
+    required: false
+    description: "Key product types or disciplines."
+  pinterest_board_id:
+    type: string
+    required: false
+    description: "Pinterest gallery ID."
