@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Kite-knowledge — Contributors Hall of Fame (Epic 9.2)
+   ========================================================================== */
+
+.contributors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-6) 0;
+}
+
+.contributor-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  background-color: var(--color-background-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contributor-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary-light);
+}
+
+.contributor-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary-light);
+  background-color: var(--color-background);
+}
+
+.contributor-info h4 {
+  margin: 0 0 var(--space-1) 0;
+  color: var(--color-primary);
+  font-size: var(--font-size-base);
+}
+
+.contributor-info p {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.contributor-info .role {
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+}
+
+.contributor-info .expertise {
+  font-style: italic;
+  margin-bottom: var(--space-2);
+}
+
+.github-link {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] .contributor-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: var(--color-border-strong);
+}

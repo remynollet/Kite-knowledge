@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Kite-knowledge — Pinterest Gallery Styling (Epic 7.3)
+   ========================================================================== */
+
+.pinterest-board-container {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-4);
+  margin-top: var(--space-6);
+  clear: both;
+}
+
+.pinterest-board-container h3 {
+  margin-top: 0;
+  color: var(--color-primary);
+  font-size: var(--font-size-lg);
+  border-bottom: none;
+}
+
+/* Ensure the widget spans the content width but stays contained */
+span[data-pin-log="embed_grid_board"],
+span[data-pin-log="embed_grid_board"] iframe {
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  display: block !important;
+}
+
+/* Adjustments for dark mode if needed */
+[data-md-color-scheme="slate"] .pinterest-board-container {
+  border-top-color: var(--color-border-strong);
+}
