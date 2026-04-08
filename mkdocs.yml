@@ -47,7 +47,10 @@ extra_css:
 - stylesheets/amendment.css
 - stylesheets/contributors.css
 - stylesheets/ai-content-warning.css
+- stylesheets/graph-explorer.css
+
 plugins:
+
 - i18n:
     languages:
     - locale: fr
@@ -212,6 +215,7 @@ nav:
     - Bilboquet: shops/bilboquet.md
     - Drachen Metropolis: shops/drachen-metropolis.md
     - Le Cerf-Volant: shops/le-cerf-volant.md
+- Explore: explore.md
 - Timeline:
   - Interactive Timeline: timeline/index.md
   - Historical Deep Dives:

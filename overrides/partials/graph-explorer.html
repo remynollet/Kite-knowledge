@@ -1,0 +1,168 @@
+{#
+  graph-explorer.html — Story 12.2
+  Interactive D3.js Knowledge Graph visualization.
+  Loads data from docs/assets/data/graph.json.
+#}
+
+<div class="graph-explorer">
+  <div id="graph-tooltip" class="graph-tooltip"></div>
+  <div id="graph-container" class="graph-container">
+    <svg id="graph-svg" class="graph-svg"></svg>
+  </div>
+
+  <div class="graph-legend">
+    <span class="legend-item"><i class="node-person"></i> Person</span>
+    <span class="legend-item"><i class="node-brand"></i> Brand</span>
+    <span class="legend-item"><i class="node-model"></i> Model</span>
+    <span class="legend-item"><i class="node-club"></i> Club</span>
+    <span class="legend-item"><i class="node-team"></i> Team</span>
+    <span class="legend-item"><i class="node-festival"></i> Festival</span>
+  </div>
+</div>
+
+<style>
+  .graph-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .legend-item i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+</style>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const width = document.getElementById('graph-container').clientWidth;
+    const height = 600;
+    const jsonPath = "{{ config.site_url | default('') }}assets/data/graph.json";
+
+    const svg = d3.select("#graph-svg")
+      .attr("width", "100%")
+      .attr("height", height)
+      .attr("viewBox", [0, 0, width, height]);
+
+    const g = svg.append("g");
+
+    // Zoom behavior
+    svg.call(d3.zoom()
+      .extent([[0, 0], [width, height]])
+      .scaleExtent([0.1, 8])
+      .on("zoom", ({transform}) => g.attr("transform", transform)));
+
+    const tooltip = d3.select("#graph-tooltip");
+
+    d3.json(jsonPath).then(function(data) {
+      if (!data) return;
+
+      const simulation = d3.forceSimulation(data.nodes)
+        .force("link", d3.forceLink(data.links).id(d => d.id).distance(100))
+        .force("charge", d3.forceManyBody().strength(-300))
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("x", d3.forceX())
+        .force("y", d3.forceY());
+
+      const link = g.append("g")
+        .attr("class", "links")
+        .selectAll("line")
+        .data(data.links)
+        .join("line")
+        .attr("class", "link");
+
+      const node = g.append("g")
+        .attr("class", "nodes")
+        .selectAll(".node")
+        .data(data.nodes)
+        .join("g")
+        .attr("class", d => `node node-${d.type}`)
+        .call(drag(simulation));
+
+      node.append("circle")
+        .attr("r", 5);
+
+      node.append("text")
+        .attr("dx", 8)
+        .attr("dy", ".35em")
+        .text(d => d.name);
+
+      node.on("mouseover", (event, d) => {
+        tooltip.style("display", "block")
+          .html(`<strong>${d.name}</strong><br/>Type: ${d.type}`);
+      })
+      .on("mousemove", (event) => {
+        tooltip.style("left", (event.pageX + 10) + "px")
+          .style("top", (event.pageY - 10) + "px");
+      })
+      .on("mouseout", () => {
+        tooltip.style("display", "none");
+      })
+      .on("click", (event, d) => {
+        // Navigate to entity page
+        // Mapping types to folders
+        const typeFolders = {
+          "person": "people",
+          "brand": "brands",
+          "model": "models",
+          "club": "clubs",
+          "team": "teams",
+          "festival": "festivals",
+          "shop": "shops",
+          "timeline": "timeline",
+          "material": "materials",
+          "frame": "frames"
+        };
+        const folder = typeFolders[d.type] || d.type;
+        window.location.href = `../${folder}/${d.id}/`;
+      });
+
+      simulation.on("tick", () => {
+        link
+          .attr("x1", d => d.source.x)
+          .attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x)
+          .attr("y2", d => d.target.y);
+
+        node
+          .attr("transform", d => `translate(${d.x},${d.y})`);
+      });
+
+      function drag(simulation) {
+        function dragstarted(event) {
+          if (!event.active) simulation.alphaTarget(0.3).restart();
+          event.subject.fx = event.subject.x;
+          event.subject.fy = event.subject.y;
+        }
+        
+        function dragged(event) {
+          event.subject.fx = event.x;
+          event.subject.fy = event.y;
+        }
+        
+        function dragended(event) {
+          if (!event.active) simulation.alphaTarget(0);
+          event.subject.fx = null;
+          event.subject.fy = null;
+        }
+        
+        return d3.drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended);
+      }
+    }).catch(err => {
+      console.error("Error loading graph data:", err);
+      document.getElementById('graph-container').innerHTML = `<p style='padding: 20px; color: red;'>Error loading knowledge graph data. Ensure assets/data/graph.json exists.</p>`;
+    });
+  });
+</script>

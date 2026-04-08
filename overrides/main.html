@@ -21,10 +21,15 @@
   {% endif %}
 
   {# ── Epic 2.2 + Epic 4.1: EntityHeader with ValidationBadge (entity pages only) ── #}
-  {% if page.meta and page.meta.type and page.meta.type != "meta" %}
+  {% if page.meta and page.meta.type and page.meta.type != "meta" and page.meta.type != "graph_explorer" %}
     {% include "partials/validation-badge.html" %}
     {% include "partials/entity-header.html" %}
     {% include "partials/key-facts-block.html" %}
+  {% endif %}
+
+  {# ── Story 12.2: Graph Explorer Component ── #}
+  {% if page.meta and page.meta.type == "graph_explorer" %}
+    {% include "partials/graph-explorer.html" %}
   {% endif %}
 
   {# ── Page body content ── #}
