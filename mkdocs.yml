@@ -79,121 +79,73 @@ nav:
 - Home: index.md
 - People:
   - Home: people/index.md
-  - Alain Lemoine: people/alain-lemoine.md
-  - Alban Rossi – « Garder le Kap »: people/alban-garder-le-kap.md
-  - Alesk Gornet: people/alesk-gornet.md
-  - Alexander Graham Bell: people/alexander-graham-bell.md
-  - Alexandre Ziegler: people/alexandre-ziegler.md
-  - Baden Baden-Powell: people/baden-baden-powell.md
-  - Benoît Flament: people/benoit-flament.md
-  - Birger Garbe - Ulzburger Kites: people/birger-garbe-ulzburger.md
-  - Bruno Berthebaud: people/bruno-berthebaud.md
-  - Bruno Duval: people/bruno-duval.md
-  - Carl Robertshaw: people/carl-robertshaw.md
-  - Chris Goff: people/chris-goff.md
-  - Didier Ferment: people/didier-ferment.md
-  - Domina Herburt Jalbert: people/domina-jalbert.md
-  - Don Dunford: people/don-dunford.md
-  - Don Tabor: people/don-tabor.md
-  - Francis Melvin Rogallo: people/francis-rogallo.md
-  - Gérard Clément: people/gerard-clement.md
-  - Guido Maiocchi: people/guido-maiocchi.md
-  - Jean Apostolidès: people/jean-apostolides.md
-  - Jean-Pierre Dravigney: people/jean-pierre-dravigney.md
-  - Jérémy Dupont: people/jeremy-dupont.md
-  - Joe Hadzicki: people/joe-hadzicki.md
-  - John Barresi: people/john-barresi.md
-  - Joseph Lecornu: people/joseph-lecornu.md
-  - Julien Lahyani: people/julien-lahyani.md
-  - Lawrence Hargrave: people/lawrence-hargrave.md
-  - Marc Levesque: people/marc-levesque.md
-  - Maxime Desavoye: people/maxime-desavoye.md
-  - Nils Guhl: people/nils-guhl.md
-  - Olivier Réthoré: people/olivier-rethore.md
-  - Otto Lilienthal: people/otto-lilienthal.md
-  - Pascal Brunel: people/pascal-brunel.md
-  - Peter Lynn: people/peter-lynn.md
-  - Peter Maternus (PAW): people/peter-maternus.md
-  - Philippe Chatelain (Philip78): people/philippe-chatelain.md
-  - Ray Bordelon: people/ray-bordelon.md
-  - Rémy Nollet: people/remy-nollet.md
-  - Richard Debray: people/richard-debray.md
-  - Roger Tessa-Gambassi: people/roger-tessa-gambassi.md
-  - Samuel Franklin Cody: people/samuel-cody.md
-  - Samuel Roger: people/samuel-roger.md
-  - Steff Fermé: people/steff-ferme.md
-  - Stéphane Fermé: people/stephane-ferme.md
-  - Thierry Bressure: people/thierry-bressure.md
-  - Thomas Alva Edison: people/thomas-edison.md
-  - Wilbur & Orville Wright: people/wright-brothers.md
-  - Yasu Numata: people/yasu-numata.md
-  - Yasumasa « Yasu » Numata: people/yasumasa-numata.md
+  - Historical Pioneers:
+    - Alexander Graham Bell: people/alexander-graham-bell.md
+    - Baden Baden-Powell: people/baden-baden-powell.md
+    - Domina Herburt Jalbert: people/domina-jalbert.md
+    - Francis Melvin Rogallo: people/francis-rogallo.md
+    - Lawrence Hargrave: people/lawrence-hargrave.md
+    - Otto Lilienthal: people/otto-lilienthal.md
+    - Samuel Franklin Cody: people/samuel-cody.md
+    - Thomas Alva Edison: people/thomas-edison.md
+    - Wilbur & Orville Wright: people/wright-brothers.md
+  - Modern Pilots & Designers:
+    - Alain Lemoine: people/alain-lemoine.md
+    - Alban Rossi: people/alban-garder-le-kap.md
+    - John Barresi: people/john-barresi.md
+    - Richard Debray: people/richard-debray.md
+    - Jérémy Dupont: people/jeremy-dupont.md
+    - Julien Lahyani: people/julien-lahyani.md
+    - Nils Guhl: people/nils-guhl.md
+    - Peter Lynn: people/peter-lynn.md
+    - Peter Maternus (PAW): people/peter-maternus.md
+    - Rémy Nollet: people/remy-nollet.md
+    - Samuel Roger: people/samuel-roger.md
+    - Stéphane Fermé: people/stephane-ferme.md
+    - Yasu Numata: people/yasumasa-numata.md
 - Brands:
   - Home: brands/index.md
-  - Aerostuff: brands/aerostuff.md
-  - Air-One Kites (Marnaz Kites Factory): brands/air-one-kites.md
-  - Cavaliers du Ciel: brands/cavaliers-du-ciel.md
-  - Cerf-Volant Service: brands/cerf-volant-service.md
-  - Drachen Metropolis: brands/drachen-metropolis.md
-  - Drôles d'Oiseaux: brands/droles-d-oiseaux.md
-  - Kite Forge: brands/kite-forge.md
-  - L'Atelier: brands/l-atelier.md
-  - Le Bilboquet: brands/le-bilboquet.md
-  - Peter Powell Kites: brands/peter-powell-kites.md
-  - R-Sky: brands/r-sky.md
-  - Revolution Kites: brands/revolution-kites.md
-  - Top of the Line (TOTL): brands/top-of-the-line.md
+  - Mainstream & Modern:
+    - Aerostuff: brands/aerostuff.md
+    - Kite Forge: brands/kite-forge.md
+    - L'Atelier: brands/l-atelier.md
+    - R-Sky: brands/r-sky.md
+    - Revolution Kites: brands/revolution-kites.md
+  - Historical & Specialized:
+    - Cavaliers du Ciel: brands/cavaliers-du-ciel.md
+    - Cerf-Volant Service: brands/cerf-volant-service.md
+    - Drôles d'Oiseaux: brands/droles-d-oiseaux.md
+    - Peter Powell Kites: brands/peter-powell-kites.md
+    - Top of the Line (TOTL): brands/top-of-the-line.md
 - Models:
   - Home: models/index.md
-  - Blackbird 1: models/blackbird-1.md
-  - Cody War Kite: models/cody-war-kite.md
-  - Djinn: models/djinn.md
-  - Dunford Flying Machine: models/dunford-flying-machine.md
-  - Fury: models/fury.md
-  - Hawaiian Team Kite: models/hawaiian.md
-  - Most Excellent Flying Machine (MEFM): models/mefm.md
-  - Nirvana: models/nirvana.md
-  - North Shore Radical (NSR): models/north-shore-radical.md
-  - Orao Fourlines - Le 4 Lignes Accessible de Decathlon: models/orao-fourlines.md
-  - Parafoil (Ram-air Wing): models/parafoil.md
-  - Revolution - Le Cerf-Volant 4 Lignes: models/revolution-quad.md
-  - Rogallo Wing (Parawing): models/rogallo-wing.md
-  - Skyburner Fulcrum - La Révolution Quad-Line: models/skyburner-fulcrum.md
-- Materials:
-  - Home: materials/index.md
-  - Icarex: materials/icarex.md
-- Frames:
-  - Home: frames/index.md
-  - Bambou: frames/bambou.md
-  - Dynamic: frames/dynamic.md
-  - Sky Shark: frames/skyshark.md
-  - Structil: frames/structil.md
-- Clubs:
+  - Sport & Trick Kites:
+    - Djinn: models/djinn.md
+    - Fury: models/fury.md
+    - Nirvana: models/nirvana.md
+    - Revolution: models/revolution-quad.md
+    - Skyburner Fulcrum: models/skyburner-fulcrum.md
+  - Historical & Concept Kites:
+    - Cody War Kite: models/cody-war-kite.md
+    - Dunford Flying Machine: models/dunford-flying-machine.md
+    - Hawaiian Team Kite: models/hawaiian.md
+    - Parafoil: models/parafoil.md
+    - Rogallo Wing: models/rogallo-wing.md
+- Clubs & Teams:
   - Home: clubs/index.md
-  - Les Ailes du Délire: clubs/ailes-du-delire.md
-  - Les Ailes du Plaisir (LADP): clubs/ailes-du-plaisir.md
-  - Airkraft (Team): clubs/airkraft.md
-  - AWITA – All Ways In The Air: clubs/awita.md
-  - BercKite Club - Berck-sur-Mer: clubs/berck-kite-club.md
-  - Berckite Club: clubs/berckite-club.md
-  - Cerf-Volant Club de France (CVCF): clubs/cerf-volant-club-de-france.md
-  - Cerfs-Volants en Folie (CVF): clubs/cerfs-volants-folie.md
-  - Dynamic Club Bertry (AéroCh'ti): clubs/club-bertry.md
-  - Courant d'Air (Pair): clubs/courant-d-air.md
-  - EO Kite: clubs/eo-kite.md
-  - Est'Air: clubs/est-air.md
-  - Is'Air (Pair): clubs/is-air.md
-  - Le Vent de Bray-Dunes: clubs/le-vent-de-bray-dunes.md
-  - Les Galibots: clubs/les-galibots.md
-  - LungTa (Team): clubs/lung-ta.md
-  - Cerf-Volant Club Miztral: clubs/miztral.md
-  - OK Mistral: clubs/ok-mistral.md
-  - Overdrive (Team): clubs/overdrive.md
-  - Panam'Air Kite Flying Team: clubs/panam-air.md
-  - The Scratch Bunnies (Team): clubs/scratch-bunnies.md
-  - SkyDance (Team): clubs/skydance.md
-  - Start'Air (Team): clubs/start-air.md
-  - Vice Versa (Pair): clubs/vice-versa.md
+  - Notable Clubs:
+    - Les Ailes du Plaisir (LADP): clubs/ailes-du-plaisir.md
+    - Cerf-Volant Club de France (CVCF): clubs/cerf-volant-club-de-france.md
+    - Cerf-Volant Club Miztral: clubs/miztral.md
+    - Le Vent de Bray-Dunes: clubs/le-vent-de-bray-dunes.md
+    - Les Galibots: clubs/les-galibots.md
+  - Competition Teams:
+    - Airkraft: clubs/airkraft.md
+    - Cerfs-Volants en Folie (CVF): clubs/cerfs-volants-folie.md
+    - Now'Air: teams/now-air.md
+    - Overdrive: clubs/overdrive.md
+    - Red Bull Kite Force: teams/red-bull-kite-force.md
+    - Start'Air: clubs/start-air.md
 - Teams:
   - Crazy Drivers: teams/crazy-drivers.md
   - Équipes françaises de cerf-volant acrobatique: teams/equipes-francaises.md
@@ -209,11 +161,12 @@ nav:
   - Drachen Metropolis: shops/drachen-metropolis.md
   - Le Cerf-Volant: shops/le-cerf-volant.md
 - Timeline:
-  - Home: timeline/index.md
-  - Invention of the Box Kite (1893): timeline/1893-invention-box-kite.md
-  - Brevets et Inventeurs du Cerf-Volant: timeline/brevets-inventeurs.md
-  - Évolution des Cerfs-Volants de Compétition (1995-2025): timeline/evolution-cerfs-volants-competition.md
-  - Les Origines Anciennes du Cerf-Volant: timeline/origines-anciennes.md
+  - Interactive Timeline: timeline/index.md
+  - Historical Deep Dives:
+    - Ancient Origins: timeline/origines-anciennes.md
+    - 1893 Invention of the Box Kite: timeline/1893-invention-box-kite.md
+    - Evolution of Competition (1995-2025): timeline/evolution-cerfs-volants-competition.md
+    - Patents & Inventors: timeline/brevets-inventeurs.md
 - Releases:
   - Home: releases/index.md
   - April 2026 Release: releases/2026-04.md
