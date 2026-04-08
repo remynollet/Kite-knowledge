@@ -1,34 +1,36 @@
 ---
-id: "cody-war-kite"
-type: "model"
-title: "Cody War Kite"
-date_range: "1901-1915"
-geography: "United Kingdom"
-category: "cellular, man-lifting"
+id: cody-war-kite
+type: model
+title: Cody War Kite
+date_range: 1901-1915
+geography: United Kingdom
+category: cellular, man-lifting
 tags:
-  - "model"
-  - "historical"
-  - "military"
-  - "cody"
-  - "cellular"
-  - "legend"
+- model
+- historical
+- military
+- cody
+- cellular
+- legend
 related:
-  - "../people/samuel-cody.md"
-summary: "The Cody War Kite is a massive cellular kite system designed to lift military observers, pioneering British aeronautics in the early 20th century."
-ai_status: "validated"
+- ../people/samuel-cody.md
+summary: The Cody War Kite is a massive cellular kite system designed to lift military
+  observers, pioneering British aeronautics in the early 20th century.
+ai_status: validated
 ai_translated: true
 source_verified: true
-reviewer: "remynollet"
-review_date: "2026-04-06"
-patent_url: "https://patents.google.com/patent/US4892272A/en"
-archive_file: "docs/assets/archive/US4892272A.pdf"
-manufacturer: "S.F. Cody (Workshop)"
-designer: "Samuel Franklin Cody"
-wingspan: "Up to 9 meters (depending on version)"
-wind_range: "15-60 km/h"
-level: "competition"
-image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Cody_Kite_Flight.jpg/800px-Cody_Kite_Flight.jpg"
+reviewer: remynollet
+review_date: '2026-04-06'
+patent_url: https://patents.google.com/patent/US4892272A/en
+archive_file: docs/assets/archive/US4892272A.pdf
+manufacturer: S.F. Cody (Workshop)
+designer: Samuel Franklin Cody
+wingspan: Jusqu'à 9 mètres (selon version)
+wind_range: 15-60 km/h
+level: competition
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Cody_Kite_Flight.jpg/800px-Cody_Kite_Flight.jpg
 ---
+
 
 # Cody War Kite
 

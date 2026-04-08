@@ -98,6 +98,14 @@ The site uses the `mkdocs-static-i18n` plugin.
 3. Translate the content and update the frontmatter if necessary (note: technical metadata like `related`, `patent_url`, `image` must remain identical).
 4. Mark the file with `ai_translated: true` if generated via AI, and `ai_status: validated` once reviewed by a native speaker.
 
+### Linguistic Ambassadors
+
+If you are a native speaker of English, German, Italian, or Spanish, you can become a **Linguistic Ambassador**. Your role is to:
+- Review AI-generated drafts (`ai_translated: true`).
+- Ensure technical terminology is accurate according to the [Technical Glossary](glossary/index.md).
+- Validate the natural flow of the translation.
+- Set `ai_status: validated` and add your username as `reviewer`.
+
 ---
 
 ## Local Development

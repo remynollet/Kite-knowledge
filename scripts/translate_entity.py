@@ -1,11 +1,11 @@
 import yaml
 import re
 import argparse
+import os
 from pathlib import Path
 
-# NOTE: This script is a template/infrastructure for the AI translation pipeline.
-# In a real environment, it would call an LLM API (OpenAI, Anthropic, etc.).
-# For this YOLO mode, the script prepares the structure and placeholders.
+# NOTE: This script is an infrastructure for the AI translation pipeline.
+# It handles frontmatter preservation and technical terminology enforcement.
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---", re.DOTALL)
 
@@ -22,26 +22,32 @@ def translate_content(content, target_lang, dictionary):
     Placeholder for LLM translation logic.
     Ensures technical terms from the dictionary are respected.
     """
-    # 1. Protect technical terms (simple substitution for now as a proof of concept)
-    # In a real pipeline, these would be passed as 'hints' or 'system prompt' to the LLM.
     translated_content = content
     
-    # Simple demo: replace FR terms with target lang terms if found in content
-    # (Only for very specific keywords to avoid linguistic mess without real LLM)
+    # demo: replace FR terms with target lang terms if found in content
+    # In a production pipeline, this would be a prompt hint for the LLM.
     for term in dictionary["terms"]:
         fr_term = term.get("fr")
         target_term = term.get(target_lang)
         if fr_term and target_term:
-            # Case insensitive replace
             pattern = re.compile(re.escape(fr_term), re.IGNORECASE)
             translated_content = pattern.sub(target_term, translated_content)
             
     return translated_content
 
-def translate_entity(file_path, target_lang):
+def translate_entity(file_path, target_lang, force=False):
     file_path = Path(file_path)
     if not file_path.exists():
         print(f"ERROR: File {file_path} not found.")
+        return
+
+    # Skip if already a localized file
+    if any(file_path.name.endswith(f".{l}.md") for l in ["en", "de", "it", "es"]):
+        return
+
+    output_path = file_path.with_suffix(f".{target_lang}.md")
+    if output_path.exists() and not force:
+        print(f"SKIP: {output_path} already exists. Use --force to overwrite.")
         return
 
     with open(file_path, "r", encoding="utf-8") as f:
@@ -57,29 +63,38 @@ def translate_entity(file_path, target_lang):
     fm = yaml.safe_load(fm_raw)
     dictionary = load_dictionary()
 
-    # Update frontmatter
+    # Update frontmatter for translation
     fm["ai_translated"] = True
-    # Keep ai_status as validated if the source was validated, but maybe add a note
-    # or keep it as in-review for Linguistic Ambassador validation as per PRD
-    fm["ai_status"] = "in-review" 
+    fm["ai_status"] = "in-review" # Needs native speaker/Ambassador review
 
-    # Translate body (Simulation)
+    # Translate body (Simulation/Placeholder)
     translated_body = translate_content(body, target_lang, dictionary)
     
     # Construct new file
     new_fm_raw = yaml.dump(fm, allow_unicode=True, sort_keys=False)
     new_content = f"---\n{new_fm_raw}---\n{translated_body}"
     
-    output_path = file_path.with_suffix(f".{target_lang}.md")
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(new_content)
     
-    print(f"✓ Created translation draft: {output_path}")
+    print(f"✓ Translated: {file_path} -> {output_path}")
+
+def batch_translate(directory, target_lang, force=False):
+    path = Path(directory)
+    for root, _, files in os.walk(path):
+        for name in files:
+            if name.endswith(".md"):
+                file_path = Path(root) / name
+                translate_entity(file_path, target_lang, force)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Generate AI translation for an entity.")
-    parser.add_argument("file", help="Path to the source .md file (usually in docs/)")
-    parser.add_argument("--lang", default="en", help="Target language code (en, de, it, es)")
+    parser = argparse.ArgumentParser(description="Generate AI translation for entities.")
+    parser.add_argument("path", help="Path to a file or directory to translate.")
+    parser.add_argument("--lang", default="en", help="Target language code (en, de, it, es).")
+    parser.add_argument("--force", action="store_true", help="Overwrite existing translations.")
     args = parser.parse_args()
     
-    translate_entity(args.file, args.lang)
+    if os.path.isdir(args.path):
+        batch_translate(args.path, args.lang, args.force)
+    else:
+        translate_entity(args.path, args.lang, args.force)

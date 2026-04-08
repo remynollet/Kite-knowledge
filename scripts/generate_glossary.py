@@ -5,12 +5,12 @@ from pathlib import Path
 def generate_glossaries():
     """
     Generates localized glossary pages from the technical dictionary YAML.
+    Supports all 5 core languages: fr, en, de, it, es.
     """
     dict_path = Path("scripts/data/technical_dictionary.yaml")
     output_dir = Path("docs/glossary")
     
     if not dict_path.exists():
-        # Fallback for root execution
         dict_path = Path("Kite-knowledge/scripts/data/technical_dictionary.yaml")
         output_dir = Path("Kite-knowledge/docs/glossary")
 
@@ -21,9 +21,13 @@ def generate_glossaries():
     with open(dict_path, "r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
 
+    # Configuration for all 5 languages
     languages = {
         "fr": {"title": "Glossaire Technique", "header": "Définitions des termes techniques utilisés dans Kite-knowledge.", "term_key": "fr", "desc_key": "description_fr"},
-        "en": {"title": "Technical Glossary", "header": "Definitions for technical terms used throughout Kite-knowledge.", "term_key": "en", "desc_key": "description_en"}
+        "en": {"title": "Technical Glossary", "header": "Definitions for technical terms used throughout Kite-knowledge.", "term_key": "en", "desc_key": "description_en"},
+        "de": {"title": "Technisches Glossar", "header": "Definitionen technischer Begriffe, die in Kite-knowledge verwendet werden.", "term_key": "de", "desc_key": "description_en"}, # Fallback to EN desc
+        "it": {"title": "Glossario Tecnico", "header": "Definizioni dei termini tecnici utilizzati in Kite-knowledge.", "term_key": "it", "desc_key": "description_fr"}, # Fallback to FR desc
+        "es": {"title": "Glosario Técnico", "header": "Definiciones de términos técnicos utilizados en Kite-knowledge.", "term_key": "es", "desc_key": "description_en"}  # Fallback to EN desc
     }
 
     for lang_code, config in languages.items():
@@ -37,7 +41,8 @@ def generate_glossaries():
         
         for term in sorted_terms:
             name = term.get(config["term_key"], term["id"]).capitalize()
-            desc = term.get(config["desc_key"], "Description pending.")
+            # Try specific description, then fallback to localized desc, then ID
+            desc = term.get(f"description_{lang_code}", term.get(config["desc_key"], "Description pending."))
             
             # Show other translations in a small text block
             others = []

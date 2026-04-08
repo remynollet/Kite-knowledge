@@ -65,3 +65,30 @@ terms:
     es: quilla
     description_fr: "Élément central de l'armature qui court de haut en bas le long de l'axe de symétrie."
     description_en: "The central element of the frame running vertically along the axis of symmetry."
+
+  - id: wingspan
+    fr: envergure
+    en: wingspan
+    de: Spannweite
+    it: apertura alare
+    es: envergadura
+    description_fr: "La distance entre les deux extrémités latérales des ailes du cerf-volant."
+    description_en: "The distance from the tip of one wing to the tip of the other."
+
+  - id: vented
+    fr: ventilé
+    en: vented
+    de: ventiliert
+    it: ventilato
+    es: ventilado
+    description_fr: "Modèle dont la voile comporte des ouvertures (évents) pour réduire la pression du vent fort."
+    description_en: "A kite model with openings (vents) in the sail to reduce pressure in high winds."
+
+  - id: bridle-adjustment
+    fr: réglage de bridage
+    en: bridle adjustment
+    de: Waageeinstellung
+    it: regolazione della briglia
+    es: ajuste de brida
+    description_fr: "Modification de la longueur des lignes du bridage pour adapter le vol aux conditions de vent."
+    description_en: "Changing the length of bridle lines to adapt the flight to wind conditions."

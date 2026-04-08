@@ -6,6 +6,10 @@ Definitions for technical terms used throughout Kite-knowledge.
 A system of lines connecting the kite to the flying line, used to control the angle of attack.
 *(FR: bridage, DE: Waage, IT: briglia, ES: brida)*
 
+### Bridle adjustment
+Changing the length of bridle lines to adapt the flight to wind conditions.
+*(FR: réglage de bridage, DE: Waageeinstellung, IT: regolazione della briglia, ES: ajuste de brida)*
+
 ### Leading edge
 The front edge of the sail that meets the wind first.
 *(FR: bord d'attaque, DE: Leitkante, IT: bordo d'attacco, ES: borde de ataque)*
@@ -29,3 +33,11 @@ The central element of the frame running vertically along the axis of symmetry.
 ### Trailing edge
 The rear edge of the sail where the wind flows off.
 *(FR: bord de fuite, DE: Schleppkante, IT: bordo d'uscita, ES: borde de fuga)*
+
+### Vented
+A kite model with openings (vents) in the sail to reduce pressure in high winds.
+*(FR: ventilé, DE: ventiliert, IT: ventilato, ES: ventilado)*
+
+### Wingspan
+The distance from the tip of one wing to the tip of the other.
+*(FR: envergure, DE: Spannweite, IT: apertura alare, ES: envergadura)*

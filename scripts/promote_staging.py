@@ -31,6 +31,7 @@ TYPE_TO_FOLDER = {
     "pilot": "pilots",
     "team": "teams",
     "timeline": "timeline",
+    "festival": "festivals",
     "release": "releases",
 }
 
@@ -87,7 +88,7 @@ def cmd_to_review(staging_path: Path) -> int:
     slug = staging_path.stem
     folder = TYPE_TO_FOLDER.get(entity_type, f"{entity_type}s")
 
-    print(f"✓ ai_status updated: draft → in-review in {staging_path}")
+    print(f"v ai_status updated: draft -> in-review in {staging_path}")
     print()
     print("Next steps to open a review PR:")
     print(f"  1. git add {staging_path}")
@@ -129,7 +130,7 @@ def cmd_promote(staging_path: Path) -> int:
     dest_path.parent.mkdir(parents=True, exist_ok=True)
     shutil.move(str(staging_path), str(dest_path))
 
-    print(f"✓ Promoted: {staging_path} → {dest_path}")
+    print(f"v Promoted: {staging_path} -> {dest_path}")
     print()
     print("Next steps to publish:")
     print(f"  1. Review the file at: {dest_path}")
