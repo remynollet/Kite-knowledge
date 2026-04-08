@@ -1,0 +1,1121 @@
+{
+  "nodes": [
+    {
+      "id": "contributors",
+      "name": "Contributors",
+      "type": "meta"
+    },
+    {
+      "id": "aerostuff",
+      "name": "Aerostuff",
+      "type": "brand"
+    },
+    {
+      "id": "air-one-kites",
+      "name": "Air-One Kites (Marnaz Kites Factory)",
+      "type": "brand"
+    },
+    {
+      "id": "cavaliers-du-ciel",
+      "name": "Cavaliers du Ciel",
+      "type": "brand"
+    },
+    {
+      "id": "cerf-volant-service",
+      "name": "Cerf-Volant Service",
+      "type": "brand"
+    },
+    {
+      "id": "drachen-metropolis",
+      "name": "Drachen Metropolis",
+      "type": "brand"
+    },
+    {
+      "id": "droles-d-oiseaux",
+      "name": "Drôles d'Oiseaux",
+      "type": "brand"
+    },
+    {
+      "id": "kite-forge",
+      "name": "Kite Forge",
+      "type": "brand"
+    },
+    {
+      "id": "l-atelier",
+      "name": "L'Atelier",
+      "type": "brand"
+    },
+    {
+      "id": "le-bilboquet",
+      "name": "Le Bilboquet",
+      "type": "brand"
+    },
+    {
+      "id": "peter-powell-kites",
+      "name": "Peter Powell Kites",
+      "type": "brand"
+    },
+    {
+      "id": "r-sky",
+      "name": "R-Sky",
+      "type": "brand"
+    },
+    {
+      "id": "revolution-kites",
+      "name": "Revolution Kites",
+      "type": "brand"
+    },
+    {
+      "id": "top-of-the-line",
+      "name": "Top of the Line (TOTL)",
+      "type": "brand"
+    },
+    {
+      "id": "ailes-du-delire",
+      "name": "Les Ailes du Délire",
+      "type": "club"
+    },
+    {
+      "id": "ailes-du-plaisir",
+      "name": "Les Ailes du Plaisir (LADP)",
+      "type": "club"
+    },
+    {
+      "id": "airkraft",
+      "name": "Airkraft (Team)",
+      "type": "club"
+    },
+    {
+      "id": "awita",
+      "name": "AWITA – All Ways In The Air",
+      "type": "club"
+    },
+    {
+      "id": "berck-kite-club",
+      "name": "BercKite Club - Berck-sur-Mer",
+      "type": "club"
+    },
+    {
+      "id": "berckite-club",
+      "name": "Berckite Club",
+      "type": "club"
+    },
+    {
+      "id": "cerf-volant-club-de-france",
+      "name": "Cerf-Volant Club de France (CVCF)",
+      "type": "club"
+    },
+    {
+      "id": "cerfs-volants-folie",
+      "name": "Cerfs-Volants en Folie (CVF)",
+      "type": "club"
+    },
+    {
+      "id": "club-bertry",
+      "name": "Dynamic Club Bertry (AéroCh'ti)",
+      "type": "club"
+    },
+    {
+      "id": "courant-d-air",
+      "name": "Courant d'Air (Pair)",
+      "type": "club"
+    },
+    {
+      "id": "eo-kite",
+      "name": "EO Kite",
+      "type": "club"
+    },
+    {
+      "id": "est-air",
+      "name": "Est'Air",
+      "type": "club"
+    },
+    {
+      "id": "is-air",
+      "name": "Is'Air (Pair)",
+      "type": "club"
+    },
+    {
+      "id": "le-vent-de-bray-dunes",
+      "name": "Le Vent de Bray-Dunes",
+      "type": "club"
+    },
+    {
+      "id": "les-galibots",
+      "name": "Les Galibots",
+      "type": "club"
+    },
+    {
+      "id": "lung-ta",
+      "name": "LungTa (Team)",
+      "type": "club"
+    },
+    {
+      "id": "miztral",
+      "name": "Cerf-Volant Club Miztral",
+      "type": "club"
+    },
+    {
+      "id": "ok-mistral",
+      "name": "OK Mistral",
+      "type": "club"
+    },
+    {
+      "id": "overdrive",
+      "name": "Overdrive (Team)",
+      "type": "club"
+    },
+    {
+      "id": "panam-air",
+      "name": "Panam'Air Kite Flying Team",
+      "type": "club"
+    },
+    {
+      "id": "scratch-bunnies",
+      "name": "The Scratch Bunnies (Team)",
+      "type": "club"
+    },
+    {
+      "id": "skydance",
+      "name": "SkyDance (Team)",
+      "type": "club"
+    },
+    {
+      "id": "start-air",
+      "name": "Start'Air (Team)",
+      "type": "club"
+    },
+    {
+      "id": "vice-versa",
+      "name": "Vice Versa (Pair)",
+      "type": "club"
+    },
+    {
+      "id": "eurocup-frejus-2025",
+      "name": "EuroCup 2025 — Fréjus",
+      "type": "festival"
+    },
+    {
+      "id": "festival-dieppe",
+      "name": "Festival International de Cerf-Volant de Dieppe",
+      "type": "festival"
+    },
+    {
+      "id": "ricv-berck",
+      "name": "RICV – Rencontres Internationales de Cerfs-Volants de Berck-sur-Mer",
+      "type": "festival"
+    },
+    {
+      "id": "bambou",
+      "name": "Bambou",
+      "type": "frame"
+    },
+    {
+      "id": "dynamic",
+      "name": "Dynamic",
+      "type": "frame"
+    },
+    {
+      "id": "skyshark",
+      "name": "Sky Shark",
+      "type": "frame"
+    },
+    {
+      "id": "structil",
+      "name": "Structil",
+      "type": "frame"
+    },
+    {
+      "id": "icarex",
+      "name": "Icarex",
+      "type": "material"
+    },
+    {
+      "id": "blackbird-1",
+      "name": "Blackbird 1",
+      "type": "model"
+    },
+    {
+      "id": "cody-war-kite",
+      "name": "Cody War Kite",
+      "type": "model"
+    },
+    {
+      "id": "djinn",
+      "name": "Djinn",
+      "type": "model"
+    },
+    {
+      "id": "dunford-flying-machine",
+      "name": "Dunford Flying Machine",
+      "type": "model"
+    },
+    {
+      "id": "fury",
+      "name": "Fury",
+      "type": "model"
+    },
+    {
+      "id": "hawaiian",
+      "name": "Hawaiian Team Kite",
+      "type": "model"
+    },
+    {
+      "id": "mefm",
+      "name": "Most Excellent Flying Machine (MEFM)",
+      "type": "model"
+    },
+    {
+      "id": "nirvana",
+      "name": "Nirvana",
+      "type": "model"
+    },
+    {
+      "id": "north-shore-radical",
+      "name": "North Shore Radical (NSR)",
+      "type": "model"
+    },
+    {
+      "id": "orao-fourlines",
+      "name": "Orao Fourlines - Le 4 Lignes Accessible de Decathlon",
+      "type": "model"
+    },
+    {
+      "id": "parafoil",
+      "name": "Parafoil (Ram-air Wing)",
+      "type": "model"
+    },
+    {
+      "id": "revolution-quad",
+      "name": "Revolution - Le Cerf-Volant 4 Lignes",
+      "type": "model"
+    },
+    {
+      "id": "rogallo-wing",
+      "name": "Rogallo Wing (Parawing)",
+      "type": "model"
+    },
+    {
+      "id": "skyburner-fulcrum",
+      "name": "Skyburner Fulcrum - La Révolution Quad-Line",
+      "type": "model"
+    },
+    {
+      "id": "alain-lemoine",
+      "name": "Alain Lemoine : Champion de France Indoor 4 Lignes",
+      "type": "person"
+    },
+    {
+      "id": "alban-garder-le-kap",
+      "name": "Alban Rossi – « Garder le Kap »",
+      "type": "person"
+    },
+    {
+      "id": "alesk-gornet",
+      "name": "Alesk Gornet",
+      "type": "person"
+    },
+    {
+      "id": "alexander-graham-bell",
+      "name": "Alexander Graham Bell",
+      "type": "person"
+    },
+    {
+      "id": "alexandre-ziegler",
+      "name": "Alexandre Ziegler",
+      "type": "person"
+    },
+    {
+      "id": "baden-baden-powell",
+      "name": "Baden Baden-Powell",
+      "type": "person"
+    },
+    {
+      "id": "benoit-flament",
+      "name": "Benoît Flament",
+      "type": "person"
+    },
+    {
+      "id": "birger-garbe-ulzburger",
+      "name": "Birger Garbe - Ulzburger Kites : Pionnier de l'Open Source dans le Cerf-Volant",
+      "type": "person"
+    },
+    {
+      "id": "bruno-berthebaud",
+      "name": "Bruno Berthebaud",
+      "type": "person"
+    },
+    {
+      "id": "bruno-duval",
+      "name": "Bruno Duval",
+      "type": "person"
+    },
+    {
+      "id": "carl-robertshaw",
+      "name": "Carl Robertshaw",
+      "type": "person"
+    },
+    {
+      "id": "chris-goff",
+      "name": "Chris Goff",
+      "type": "person"
+    },
+    {
+      "id": "didier-ferment",
+      "name": "Didier Ferment",
+      "type": "person"
+    },
+    {
+      "id": "domina-jalbert",
+      "name": "Domina Herburt Jalbert",
+      "type": "person"
+    },
+    {
+      "id": "don-dunford",
+      "name": "Don Dunford",
+      "type": "person"
+    },
+    {
+      "id": "don-tabor",
+      "name": "Don Tabor",
+      "type": "person"
+    },
+    {
+      "id": "francis-rogallo",
+      "name": "Francis Melvin Rogallo",
+      "type": "person"
+    },
+    {
+      "id": "gerard-clement",
+      "name": "Gérard Clément",
+      "type": "person"
+    },
+    {
+      "id": "guido-maiocchi",
+      "name": "Guido Maiocchi : Champion Italien et Créateur de Fly4Fun",
+      "type": "person"
+    },
+    {
+      "id": "jean-apostolides",
+      "name": "Jean Apostolidès : Pilote Parisien de Revolution",
+      "type": "person"
+    },
+    {
+      "id": "jean-pierre-dravigney",
+      "name": "Jean-Pierre Dravigney",
+      "type": "person"
+    },
+    {
+      "id": "jeremy-dupont",
+      "name": "Jérémy Dupont : Vice-Champion de France 2 Lignes",
+      "type": "person"
+    },
+    {
+      "id": "joe-hadzicki",
+      "name": "Joe Hadzicki",
+      "type": "person"
+    },
+    {
+      "id": "john-barresi",
+      "name": "John Barresi",
+      "type": "person"
+    },
+    {
+      "id": "joseph-lecornu",
+      "name": "Joseph Lecornu",
+      "type": "person"
+    },
+    {
+      "id": "julien-lahyani",
+      "name": "Julien Lahyani",
+      "type": "person"
+    },
+    {
+      "id": "lawrence-hargrave",
+      "name": "Lawrence Hargrave",
+      "type": "person"
+    },
+    {
+      "id": "marc-levesque",
+      "name": "Marc Levesque",
+      "type": "person"
+    },
+    {
+      "id": "maxime-desavoye",
+      "name": "Maxime Desavoye",
+      "type": "person"
+    },
+    {
+      "id": "nils-guhl",
+      "name": "Nils Guhl",
+      "type": "person"
+    },
+    {
+      "id": "olivier-rethore",
+      "name": "Olivier Réthoré",
+      "type": "person"
+    },
+    {
+      "id": "otto-lilienthal",
+      "name": "Otto Lilienthal",
+      "type": "person"
+    },
+    {
+      "id": "pascal-brunel",
+      "name": "Pascal Brunel",
+      "type": "person"
+    },
+    {
+      "id": "peter-lynn",
+      "name": "Peter Lynn",
+      "type": "person"
+    },
+    {
+      "id": "peter-maternus",
+      "name": "Peter Maternus (PAW)",
+      "type": "person"
+    },
+    {
+      "id": "philippe-chatelain",
+      "name": "Philippe Chatelain (Philip78)",
+      "type": "person"
+    },
+    {
+      "id": "ray-bordelon",
+      "name": "Ray Bordelon",
+      "type": "person"
+    },
+    {
+      "id": "remy-nollet",
+      "name": "Rémy Nollet",
+      "type": "person"
+    },
+    {
+      "id": "richard-debray",
+      "name": "Richard Debray",
+      "type": "person"
+    },
+    {
+      "id": "roger-tessa-gambassi",
+      "name": "Roger Tessa-Gambassi",
+      "type": "person"
+    },
+    {
+      "id": "samuel-cody",
+      "name": "Samuel Franklin Cody",
+      "type": "person"
+    },
+    {
+      "id": "samuel-roger",
+      "name": "Samuel Roger",
+      "type": "person"
+    },
+    {
+      "id": "steff-ferme",
+      "name": "Steff Fermé",
+      "type": "person"
+    },
+    {
+      "id": "stephane-ferme",
+      "name": "Stéphane Fermé",
+      "type": "person"
+    },
+    {
+      "id": "thierry-bressure",
+      "name": "Thierry Bressure",
+      "type": "person"
+    },
+    {
+      "id": "thomas-edison",
+      "name": "Thomas Alva Edison",
+      "type": "person"
+    },
+    {
+      "id": "wright-brothers",
+      "name": "Wilbur & Orville Wright",
+      "type": "person"
+    },
+    {
+      "id": "yasu-numata",
+      "name": "Yasu Numata",
+      "type": "person"
+    },
+    {
+      "id": "yasumasa-numata",
+      "name": "Yasumasa « Yasu » Numata",
+      "type": "person"
+    },
+    {
+      "id": "2026-04",
+      "name": "April 2026 Release",
+      "type": "release"
+    },
+    {
+      "id": "bilboquet",
+      "name": "Bilboquet",
+      "type": "shop"
+    },
+    {
+      "id": "drachen-metropolis",
+      "name": "Drachen Metropolis",
+      "type": "shop"
+    },
+    {
+      "id": "le-cerf-volant",
+      "name": "Le Cerf-Volant",
+      "type": "shop"
+    },
+    {
+      "id": "crazy-drivers",
+      "name": "Crazy Drivers",
+      "type": "team"
+    },
+    {
+      "id": "equipes-francaises",
+      "name": "Équipes françaises de cerf-volant acrobatique",
+      "type": "team"
+    },
+    {
+      "id": "now-air",
+      "name": "Now'Air (Team)",
+      "type": "team"
+    },
+    {
+      "id": "red-bull-kite-force",
+      "name": "Red Bull Kite Force",
+      "type": "team"
+    },
+    {
+      "id": "1893-invention-box-kite",
+      "name": "Invention of the Box Kite (1893)",
+      "type": "timeline"
+    },
+    {
+      "id": "brevets-inventeurs",
+      "name": "Brevets et Inventeurs du Cerf-Volant",
+      "type": "timeline"
+    },
+    {
+      "id": "evolution-cerfs-volants-competition",
+      "name": "Évolution des Cerfs-Volants de Compétition (1995-2025)",
+      "type": "timeline"
+    },
+    {
+      "id": "origines-anciennes",
+      "name": "Les Origines Anciennes du Cerf-Volant",
+      "type": "timeline"
+    }
+  ],
+  "links": [
+    {
+      "source": "air-one-kites",
+      "target": "cerfs-volants-folie",
+      "type": "related"
+    },
+    {
+      "source": "air-one-kites",
+      "target": "cerf-volant-service",
+      "type": "related"
+    },
+    {
+      "source": "cerf-volant-service",
+      "target": "berckite-club",
+      "type": "related"
+    },
+    {
+      "source": "drachen-metropolis",
+      "target": "skyshark",
+      "type": "related"
+    },
+    {
+      "source": "droles-d-oiseaux",
+      "target": "l-atelier",
+      "type": "related"
+    },
+    {
+      "source": "kite-forge",
+      "target": "john-barresi",
+      "type": "related"
+    },
+    {
+      "source": "kite-forge",
+      "target": "djinn",
+      "type": "related"
+    },
+    {
+      "source": "l-atelier",
+      "target": "icarex",
+      "type": "related"
+    },
+    {
+      "source": "l-atelier",
+      "target": "dynamic",
+      "type": "related"
+    },
+    {
+      "source": "r-sky",
+      "target": "nirvana",
+      "type": "related"
+    },
+    {
+      "source": "r-sky",
+      "target": "richard-debray",
+      "type": "related"
+    },
+    {
+      "source": "revolution-kites",
+      "target": "joe-hadzicki",
+      "type": "related"
+    },
+    {
+      "source": "top-of-the-line",
+      "target": "north-shore-radical",
+      "type": "related"
+    },
+    {
+      "source": "top-of-the-line",
+      "target": "don-tabor",
+      "type": "related"
+    },
+    {
+      "source": "ailes-du-plaisir",
+      "target": "philippe-chatelain",
+      "type": "related"
+    },
+    {
+      "source": "airkraft",
+      "target": "carl-robertshaw",
+      "type": "related"
+    },
+    {
+      "source": "airkraft",
+      "target": "fury",
+      "type": "related"
+    },
+    {
+      "source": "berckite-club",
+      "target": "ricv-berck",
+      "type": "related"
+    },
+    {
+      "source": "club-bertry",
+      "target": "miztral",
+      "type": "related"
+    },
+    {
+      "source": "courant-d-air",
+      "target": "benoit-flament",
+      "type": "related"
+    },
+    {
+      "source": "courant-d-air",
+      "target": "maxime-desavoye",
+      "type": "related"
+    },
+    {
+      "source": "courant-d-air",
+      "target": "start-air",
+      "type": "related"
+    },
+    {
+      "source": "est-air",
+      "target": "jean-pierre-dravigney",
+      "type": "related"
+    },
+    {
+      "source": "is-air",
+      "target": "jean-pierre-dravigney",
+      "type": "related"
+    },
+    {
+      "source": "is-air",
+      "target": "bruno-duval",
+      "type": "related"
+    },
+    {
+      "source": "lung-ta",
+      "target": "richard-debray",
+      "type": "related"
+    },
+    {
+      "source": "lung-ta",
+      "target": "blackbird-1",
+      "type": "related"
+    },
+    {
+      "source": "overdrive",
+      "target": "yasu-numata",
+      "type": "related"
+    },
+    {
+      "source": "overdrive",
+      "target": "blackbird-1",
+      "type": "related"
+    },
+    {
+      "source": "panam-air",
+      "target": "now-air",
+      "type": "related"
+    },
+    {
+      "source": "scratch-bunnies",
+      "target": "carl-robertshaw",
+      "type": "related"
+    },
+    {
+      "source": "scratch-bunnies",
+      "target": "chris-goff",
+      "type": "related"
+    },
+    {
+      "source": "skydance",
+      "target": "airkraft",
+      "type": "related"
+    },
+    {
+      "source": "start-air",
+      "target": "benoit-flament",
+      "type": "related"
+    },
+    {
+      "source": "start-air",
+      "target": "maxime-desavoye",
+      "type": "related"
+    },
+    {
+      "source": "start-air",
+      "target": "alexandre-ziegler",
+      "type": "related"
+    },
+    {
+      "source": "vice-versa",
+      "target": "richard-debray",
+      "type": "related"
+    },
+    {
+      "source": "festival-dieppe",
+      "target": "gerard-clement",
+      "type": "related"
+    },
+    {
+      "source": "ricv-berck",
+      "target": "overdrive",
+      "type": "related"
+    },
+    {
+      "source": "ricv-berck",
+      "target": "scratch-bunnies",
+      "type": "related"
+    },
+    {
+      "source": "ricv-berck",
+      "target": "start-air",
+      "type": "related"
+    },
+    {
+      "source": "ricv-berck",
+      "target": "r-sky",
+      "type": "related"
+    },
+    {
+      "source": "bambou",
+      "target": "1893-invention-box-kite",
+      "type": "related"
+    },
+    {
+      "source": "bambou",
+      "target": "lawrence-hargrave",
+      "type": "related"
+    },
+    {
+      "source": "dynamic",
+      "target": "structil",
+      "type": "related"
+    },
+    {
+      "source": "dynamic",
+      "target": "skyshark",
+      "type": "related"
+    },
+    {
+      "source": "dynamic",
+      "target": "structil",
+      "type": "produced_by"
+    },
+    {
+      "source": "skyshark",
+      "target": "icarex",
+      "type": "related"
+    },
+    {
+      "source": "structil",
+      "target": "structil",
+      "type": "produced_by"
+    },
+    {
+      "source": "icarex",
+      "target": "r-sky",
+      "type": "related"
+    },
+    {
+      "source": "icarex",
+      "target": "revolution-kites",
+      "type": "related"
+    },
+    {
+      "source": "blackbird-1",
+      "target": "richard-debray",
+      "type": "related"
+    },
+    {
+      "source": "cody-war-kite",
+      "target": "samuel-cody",
+      "type": "related"
+    },
+    {
+      "source": "djinn",
+      "target": "john-barresi",
+      "type": "related"
+    },
+    {
+      "source": "djinn",
+      "target": "icarex",
+      "type": "related"
+    },
+    {
+      "source": "djinn",
+      "target": "kite-forge",
+      "type": "produced_by"
+    },
+    {
+      "source": "djinn",
+      "target": "john-barresi",
+      "type": "designed_by"
+    },
+    {
+      "source": "dunford-flying-machine",
+      "target": "don-dunford",
+      "type": "related"
+    },
+    {
+      "source": "fury",
+      "target": "carl-robertshaw",
+      "type": "related"
+    },
+    {
+      "source": "hawaiian",
+      "target": "top-of-the-line",
+      "type": "related"
+    },
+    {
+      "source": "hawaiian",
+      "target": "don-tabor",
+      "type": "related"
+    },
+    {
+      "source": "mefm",
+      "target": "ray-bordelon",
+      "type": "related"
+    },
+    {
+      "source": "nirvana",
+      "target": "richard-debray",
+      "type": "related"
+    },
+    {
+      "source": "north-shore-radical",
+      "target": "don-tabor",
+      "type": "related"
+    },
+    {
+      "source": "parafoil",
+      "target": "domina-jalbert",
+      "type": "related"
+    },
+    {
+      "source": "rogallo-wing",
+      "target": "francis-rogallo",
+      "type": "related"
+    },
+    {
+      "source": "alban-garder-le-kap",
+      "target": "berckite-club",
+      "type": "related"
+    },
+    {
+      "source": "benoit-flament",
+      "target": "maxime-desavoye",
+      "type": "related"
+    },
+    {
+      "source": "bruno-berthebaud",
+      "target": "crazy-drivers",
+      "type": "related"
+    },
+    {
+      "source": "bruno-duval",
+      "target": "jean-pierre-dravigney",
+      "type": "related"
+    },
+    {
+      "source": "gerard-clement",
+      "target": "berckite-club",
+      "type": "related"
+    },
+    {
+      "source": "joseph-lecornu",
+      "target": "1893-invention-box-kite",
+      "type": "related"
+    },
+    {
+      "source": "joseph-lecornu",
+      "target": "lawrence-hargrave",
+      "type": "related"
+    },
+    {
+      "source": "lawrence-hargrave",
+      "target": "1893-invention-box-kite",
+      "type": "related"
+    },
+    {
+      "source": "marc-levesque",
+      "target": "festival-dieppe",
+      "type": "related"
+    },
+    {
+      "source": "marc-levesque",
+      "target": "cerf-volant-service",
+      "type": "related"
+    },
+    {
+      "source": "nils-guhl",
+      "target": "djinn",
+      "type": "related"
+    },
+    {
+      "source": "otto-lilienthal",
+      "target": "lawrence-hargrave",
+      "type": "related"
+    },
+    {
+      "source": "otto-lilienthal",
+      "target": "1893-invention-box-kite",
+      "type": "related"
+    },
+    {
+      "source": "remy-nollet",
+      "target": "eo-kite",
+      "type": "related"
+    },
+    {
+      "source": "roger-tessa-gambassi",
+      "target": "r-sky",
+      "type": "related"
+    },
+    {
+      "source": "roger-tessa-gambassi",
+      "target": "nirvana",
+      "type": "related"
+    },
+    {
+      "source": "samuel-roger",
+      "target": "eurocup-frejus-2025",
+      "type": "related"
+    },
+    {
+      "source": "steff-ferme",
+      "target": "roger-tessa-gambassi",
+      "type": "related"
+    },
+    {
+      "source": "stephane-ferme",
+      "target": "eurocup-frejus-2025",
+      "type": "related"
+    },
+    {
+      "source": "yasu-numata",
+      "target": "richard-debray",
+      "type": "related"
+    },
+    {
+      "source": "yasu-numata",
+      "target": "blackbird-1",
+      "type": "related"
+    },
+    {
+      "source": "yasumasa-numata",
+      "target": "red-bull-kite-force",
+      "type": "related"
+    },
+    {
+      "source": "2026-04",
+      "target": "lawrence-hargrave",
+      "type": "related"
+    },
+    {
+      "source": "2026-04",
+      "target": "1893-invention-box-kite",
+      "type": "related"
+    },
+    {
+      "source": "bilboquet",
+      "target": "r-sky",
+      "type": "related"
+    },
+    {
+      "source": "bilboquet",
+      "target": "l-atelier",
+      "type": "related"
+    },
+    {
+      "source": "le-cerf-volant",
+      "target": "revolution-kites",
+      "type": "related"
+    },
+    {
+      "source": "equipes-francaises",
+      "target": "cerfs-volants-folie",
+      "type": "related"
+    },
+    {
+      "source": "equipes-francaises",
+      "target": "est-air",
+      "type": "related"
+    },
+    {
+      "source": "equipes-francaises",
+      "target": "lung-ta",
+      "type": "related"
+    },
+    {
+      "source": "equipes-francaises",
+      "target": "overdrive",
+      "type": "related"
+    },
+    {
+      "source": "equipes-francaises",
+      "target": "scratch-bunnies",
+      "type": "related"
+    },
+    {
+      "source": "equipes-francaises",
+      "target": "skydance",
+      "type": "related"
+    },
+    {
+      "source": "equipes-francaises",
+      "target": "start-air",
+      "type": "related"
+    },
+    {
+      "source": "equipes-francaises",
+      "target": "vice-versa",
+      "type": "related"
+    },
+    {
+      "source": "now-air",
+      "target": "julien-lahyani",
+      "type": "related"
+    }
+  ]
+}
